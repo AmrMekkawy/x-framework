@@ -6373,18 +6373,47 @@
 /***********************************************
     font-family
 ***********************************************/
-/* system fonts */
 .x-ff-arial {
-  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif !important; }
+  font-family: Arial, sans-serif !important; }
 
 .x-ff-helvetica {
-  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+  font-family: Helvetica, sans-serif !important; }
+
+.x-ff-helveticaneue {
+  font-family: 'Helvetica Neue', sans-serif !important; }
 
 .x-ff-tahoma {
-  font-family: Tahoma, 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+  font-family: Tahoma, sans-serif !important; }
 
 .x-ff-jozoor {
-  font-family: 'JF Flat Regular', 'Helvetica Neue', Helvetica, Arial, sans-serif !important; }
+  font-family: 'JF Flat Regular', sans-serif !important; }
+
+.x-ff-droidarabicnaskh {
+  font-family: 'Droid Arabic Naskh', sans-serif !important; }
+
+.x-ff-droidarabickufi {
+  font-family: 'Droid Arabic Kufi', sans-serif !important; }
+
+.x-ff-cairo {
+  font-family: 'Cairo', sans-serif !important; }
+
+.x-ff-scheherazade {
+  font-family: 'Scheherazade', serif !important; }
+
+.x-ff-elmessiri {
+  font-family: 'El Messiri', sans-serif !important; }
+
+.x-ff-lemonada {
+  font-family: 'Lemonada', cursive !important; }
+
+.x-ff-fjallaone {
+  font-family: "Fjalla One", sans-serif !important; }
+
+.x-ff-opensanscondensed {
+  font-family: "Open Sans Condensed", sans-serif !important; }
+
+.x-ff-dosis {
+  font-family: "Dosis", sans-serif !important; }
 
 /***********************************************
     display (like emmet)
