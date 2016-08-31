@@ -5,4 +5,10 @@
 	        border-radius: $radius !important;
 }
 
+/*
+@mixin top($top) {
+	top: str-slice($top, 1, str-length($top) - str-length(unit($top))) + unit($top) !important;
+}
+*/
+
 

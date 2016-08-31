@@ -381,3 +381,71 @@
         line-height: $item + px !important;
     }
 }
+
+
+/***********************************************
+    position (like emmet)
+***********************************************/
+@each $item in "s.static", "a.absolute", "r.relative", "f.fixed" {
+    .x-pos-#{str-slice($item, 1, str-index($item, ".") - 1)} {
+        position: #{str-slice($item, str-index($item, ".") + 1)} !important;
+    }
+}
+
+/***********************************************
+    top, bottom, left, right (like emmet)
+***********************************************/
+.x-t-a {
+    top: auto !important
+}
+
+@for $item from 0 through 50 {
+    .x-t-#{$item} {
+        top: $item + px !important;
+    }
+}
+
+.x-b-a {
+    bottom: auto !important
+}
+
+@for $item from 0 through 50 {
+    .x-b-#{$item} {
+        bottom: $item + px !important;
+    }
+}
+
+.x-l-a {
+    left: auto !important
+}
+
+@for $item from 0 through 50 {
+    .x-l-#{$item} {
+        left: $item + px !important;
+    }
+}
+
+.x-r-a {
+    right: auto !important
+}
+
+@for $item from 0 through 50 {
+    .x-r-#{$item} {
+        right: $item + px !important;
+    }
+}
+
+/***********************************************
+    float and clear (like emmet)
+***********************************************/
+@each $item in "l.left", "r.right", "n.none" {
+    .x-fl-#{str-slice($item, 1, str-index($item, ".") - 1)} {
+        float: #{str-slice($item, str-index($item, ".") + 1)} !important;
+    }
+}
+
+@each $item in "l.left", "r.right", "b.both", "n.none" {
+    .x-cl-#{str-slice($item, 1, str-index($item, ".") - 1)} {
+        clear: #{str-slice($item, str-index($item, ".") + 1)} !important;
+    }
+}
