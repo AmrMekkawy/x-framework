@@ -1,14 +1,112 @@
-@mixin border-radius($radius) {
-	-webkit-border-radius: $radius !important;
-	   -moz-border-radius: $radius !important;
-	    -ms-border-radius: $radius !important;
-	        border-radius: $radius !important;
+@mixin create-css-rule($css-property, $emmet-abbreviation, $property-values-list) {
+	@each $item in $property-values-list {
+	    $dot-index: str-index($item, ".");
+	    $str-befor-dot: str-slice($item, 1, $dot-index - 1);
+	    $str-after-dot: str-slice($item, $dot-index + 1);
+
+	    .x-#{$emmet-abbreviation}-#{$str-befor-dot} {
+	        #{$css-property}: #{$str-after-dot}
+	    }
+	}
 }
 
-/*
-@mixin top($top) {
-	top: str-slice($top, 1, str-length($top) - str-length(unit($top))) + unit($top) !important;
+// $css-property      : name of the css property (e.g. "border-color")
+// $emmet-abbreviation: emmet abbreviation of the mentioned css property (e.g. "bdc" for "border-color")
+// $css-unit          : css measurement unit to use (possible values are: "", "px", "em", "p")
+// $start-value       : a value to start at, it must be an integer and must be less than or equal to $end-value
+// $end-value         : a value to end at, it must be an integer and must be greater than or equal to $start-value
+// $increment-by      : a value to increment by, it must be an integer greater than 0
+@mixin css-rule-with-integer-value($css-property, $emmet-abbreviation, $css-unit, $start-value, $end-value, $increment-by) {
+    $u: "";
+    @if $css-unit == "" {
+    	$u: "";
+    } @else if $css-unit == "px" {
+    	$u: "";
+    } @else if $css-unit == "em" {
+    	$u: "-em";
+    } @else if $css-unit == "p" {
+    	$u: "-p";
+    	$css-unit: "%";
+    }
+
+	$i: $start-value; // just for readability reasons
+
+	@while $i <= $end-value {
+	    .x-#{$emmet-abbreviation}-#{$i}#{$u} {
+	        #{$css-property}: unquote($i + $css-unit)
+	    }
+
+	    $i: $i + $increment-by;
+	}
 }
-*/
+
+
+// @mixin css-rule-for-float-number($css-property, $emmet-abbreviation, $css-unit, $start-value, $end-value, $increment-by) {
+// 	$i: $start-value; // just for readability reasons
+
+//     $u: "";
+//     @if $css-unit == "" {
+//     	$u: "";
+//     } @else if $css-unit == "px" {
+//     	$u: "";
+//     } @else if $css-unit == "em" {
+//     	$u: "-em";
+//     } @else if $css-unit == "per" {
+//     	$u: "-per";
+//     	$css-unit: "%";
+//     }
+
+//     // $end-value: $end-value + $increment-by;
+
+// 	@while $i <= $end-value {
+// 	    // inspect() function returns a string containing the value as its Sass representation - https://goo.gl/VdkNpE
+// 	    $i-as-string: inspect($i);
+
+// 	    // Get index of the "." character
+// 	    $dot-index: str-index($i-as-string, ".");
+
+// 	    // In case $i (i.e. $start-value) is an interger
+// 		$v: $i;
+
+// 		// If the "." character exists
+// 	    @if $dot-index {
+// 		    $digits-befor-dot: str-slice($i-as-string, 1, $dot-index - 1);
+// 		    $digits-after-dot: str-slice($i-as-string, $dot-index + 1);
+
+// 		    // Put the digits together without the "." character
+// 	    	$v: #{$digits-befor-dot}#{$digits-after-dot};
+// 	    }
+
+// 	    .x-#{$emmet-abbreviation}-#{$v}#{$u} {
+// 	        #{$css-property}: unquote($i + $css-unit)
+// 	    }
+
+// 	    $i: $i + $increment-by;
+// 	}
+// }
+
+
+
+// @mixin css-rule-for-integer-number($css-property, $emmet-abbreviation, $css-unit, $start-integer, $end-integer) {
+// 	@for $i from $start-integer through $end-integer {
+// 		.x-#{$emmet-abbreviation}-#{$i} {
+// 			#{$css-property}: unquote($i + $css-unit)
+// 		}
+// 	}
+// }
+
+
+// @mixin border-radius($radius) {
+//     -webkit-border-radius: $radius;
+//             border-radius: $radius;
+// }
+
+
+// @mixin top($top) {
+// 	top: str-slice($top, 1, str-length($top) - str-length(unit($top))) + unit($top) !important;
+// }
+
+
+
 
 

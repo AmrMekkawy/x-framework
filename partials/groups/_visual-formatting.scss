@@ -1,0 +1,118 @@
+/***********************************************/
+/* Visual Formatting                           */
+/***********************************************/
+
+/**
+ * CSS property: position
+ * Emmet abbreviation: pos
+ */
+@include create-css-rule("position", "pos", ("a.absolute", "f.fixed", "r.relative", "s.static"));
+
+/**
+ * CSS property: top
+ * Emmet abbreviation: t
+ */
+@include create-css-rule("top", "t", ("a.auto"));
+@include css-rule-with-integer-value("top", "t", "px", $zero, $one-hundred, $one);
+
+
+/**
+ * CSS property: bottom
+ * Emmet abbreviation: b
+ */
+@include create-css-rule("bottom", "b", ("a.auto"));
+@include css-rule-with-integer-value("bottom", "b", "px", $zero, $one-hundred, $one);
+
+/**
+ * CSS property: left
+ * Emmet abbreviation: l
+ */
+@include create-css-rule("left", "l", ("a.auto"));
+@include css-rule-with-integer-value("left", "l", "px", $zero, $one-hundred, $one);
+
+/**
+ * CSS property: right
+ * Emmet abbreviation: r
+ */
+@include create-css-rule("right", "r", ("a.auto"));
+@include css-rule-with-integer-value("right", "r", "px", $zero, $one-hundred, $one);
+
+/**
+ * CSS property: z-index
+ * Emmet abbreviation: z
+ */
+@include create-css-rule("z-index", "z", ("a.auto"));
+@include css-rule-with-integer-value("z-index", "z", "", $zero, $one-thousand, $ten);
+
+/**
+ * CSS property: float
+ * Emmet abbreviation: fl
+ */
+@include create-css-rule("float", "fl", ("l.left", "r.right", "n.none"));
+
+/**
+ * CSS property: clear
+ * Emmet abbreviation: cl
+ */
+@include create-css-rule("clear", "cl", ("l.left", "r.right", "b.both", "n.none"));
+
+/**
+ * CSS property: display
+ * Emmet abbreviation: d
+ */
+@include create-css-rule("display", "d", ("n.none", "b.block", "f.flex", "if.inline-flex", "i.inline", "ib.inline-block", "li.list-item", "ri.run-in", "cp.compact", "tb.table", "itb.inline-table", "tbcp.table-caption", "tbcl.table-column", "tbclg.table-column-group", "tbhg.table-header-group", "tbfg.table-footer-group", "tbr.table-row", "tbrg.table-row-group", "tbc.table-cell", "rb.ruby", "rbb.ruby-base", "rbbg.ruby-base-group", "rbt.ruby-text", "rbtg.ruby-text-group"));
+
+/**
+ * CSS property: visibility
+ * Emmet abbreviation: v
+ */
+@include create-css-rule("visibility", "v", ("v.visible", "h.hidden", "c.collapse"));
+
+/**
+ * CSS property: overflow
+ * Emmet abbreviation: ov
+ */
+@include create-css-rule("overflow", "ov", ("v.visible", "h.hidden", "s.scroll", "a.auto"));
+
+/**
+ * CSS property: overflow-x
+ * Emmet abbreviation: ovx
+ */
+@include create-css-rule("overflow-x", "ovx", ("v.visible", "h.hidden", "s.scroll", "a.auto"));
+
+/**
+ * CSS property: overflow-y
+ * Emmet abbreviation: ovy
+ */
+@include create-css-rule("overflow-y", "ovy", ("v.visible", "h.hidden", "s.scroll", "a.auto"));
+
+/**
+ * CSS property: overflow-style
+ * Emmet abbreviation: ovs
+ */
+@include create-css-rule("overflow-style", "ovs", ("a.auto", "s.scrollbar", "p.panner", "m.move", "mq.marquee"));
+
+/**
+ * CSS property: zoom
+ * Emmet abbreviation: zoo, zm
+ */
+@include css-rule-with-integer-value("zoom", "zoo", "", $zero, $ten, $one);
+@include css-rule-with-integer-value("zoom", "zm", "", $zero, $ten, $one);
+
+/**
+ * CSS property: clip
+ * Emmet abbreviation: cp
+ */
+@include create-css-rule("clip", "cp", ("a.auto"));
+
+/**
+ * CSS property: resize
+ * Emmet abbreviation: rsz
+ */
+@include create-css-rule("resize", "rsz", ("n.none", "b.both", "h.horizontal", "v.vertical"));
+
+/**
+ * CSS property: cursor
+ * Emmet abbreviation: cur
+ */
+@include create-css-rule("cursor", "cur", ("a.auto", "d.default", "c.crosshair", "ha.hand", "he.help", "m.move", "p.pointer", "t.text"));
