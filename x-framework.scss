@@ -1,9 +1,10 @@
-// Note that the leading underscore in the names of partial files is important
-@import "partials/_variables.scss";
-@import "partials/_lists.scss";
-@import "partials/_mixins.scss";
+@import "partials/dependencies/_dependencies-list.scss";
 
-@import "partials/groups/_visual-formatting.scss";
+// @import "partials/css-property-groups/_visual-formatting.scss";
+
+// color group
+// @import "partials/css-property-groups/color-group/x-framework-color-properties.scss";
+@import "partials/css-properties/_color.scss";
 
 
 
