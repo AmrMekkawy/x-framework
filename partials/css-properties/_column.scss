@@ -1,8 +1,53 @@
-/***********************************************/
-/* column                                      */
-/***********************************************/
+//***********************************************/
+//* column                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * column-count
+ * Emmet abbreviation: colmc
  */
+@include css-rule-with-integer-value("column-count", "colmc", "", $zero, $ten, $one);
+
+/**
+ * column-fill
+ * Emmet abbreviation: colmf
+ */
+@include create-css-rule("column-fill", "colmf", ("a.auto", "b.balance"));
+
+/**
+ * column-gap
+ * Emmet abbreviation: colmg
+ */
+@include css-rule-with-integer-value("column-gap", "colmg", "px", $zero, $one-hundred, $five);
+
+/**
+ * column-rule-color
+ * Emmet abbreviation: colmrc
+ */
+@include create-css-rule("column-rule-color", "colmrc", $color-codes-list);
+@include create-css-rule("column-rule-color", "colmrc", $color-names-list);
+
+/**
+ * column-rule-style
+ * Emmet abbreviation: colmrs
+ */
+@include create-css-rule("column-rule-style", "colmrs", ("h.hidden", "n.none", "dt.dotted", "ds.dashed", "s.solid", "db.double", "g.groove", "r.ridge", "i.inset", "o.outset"));
+
+/**
+ * column-rule-width
+ * Emmet abbreviation: colmrw
+ */
+@include css-rule-with-integer-value("column-rule-width", "colmrw", "px", $zero, $ten, $one);
+
+/**
+ * column-span
+ * Emmet abbreviation: colms
+ */
+ // Takes value "1" or "all"
+@include create-css-rule("column-span", "colms", ("1.1", "a.all"));
+
+/**
+ * column-width
+ * Emmet abbreviation: colmw
+ */
+@include css-rule-with-integer-value("column-width", "colmw", "px", $zero, $five-hundred, $ten);

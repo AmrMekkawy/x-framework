@@ -1,8 +1,9 @@
-/***********************************************/
-/* writing                                     */
-/***********************************************/
+//***********************************************/
+//* writing                                     */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * writing-mode
+ * Emmet abbreviation: wm
  */
+@include create-css-rule("writing-mode", "wm", ("btl.bt-lr", "btr.bt-rl", "lrb.lr-bt", "lrt.lr-tb", "rlb.rl-bt", "rlt.rl-tb", "tbl.tb-lr", "tbr.tb-rl"));

@@ -1,8 +1,27 @@
-/***********************************************/
-/* list                                        */
-/***********************************************/
+//***********************************************/
+//* list                                        */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * list-style
+ * Emmet abbreviation: lis
  */
+@include create-css-rule("list-style", "lis", ("n.none"));
+
+/**
+ * list-style-position
+ * Emmet abbreviation: lisp
+ */
+@include create-css-rule("list-style-position", "lisp", ("i.inside", "o.outside"));
+
+/**
+ * list-style-type
+ * Emmet abbreviation: list
+ */
+@include create-css-rule("list-style-type", "list", ("n.none", "d.disc", "c.circle", "s.square", "dc.decimal", "dclz.decimal-leading-zero", "lr.lower-roman", "ur.upper-roman"));
+
+/**
+ * list-style-image
+ * Emmet abbreviation: lisi
+ */
+@include create-css-rule("list-style-image", "lisi", ("n.none"));

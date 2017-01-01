@@ -1,8 +1,10 @@
-/***********************************************/
-/* content                                     */
-/***********************************************/
+//***********************************************/
+//* content                                     */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * content
+ * Emmet abbreviation: cnt, ct
  */
+@include create-css-rule("content", "cnt", ("n.normal", "oq.open-quote", "noq.no-open-quote", "cq.close-quote", "ncq.no-close-quote"));
+@include create-css-rule("content", "ct", ("n.normal", "oq.open-quote", "noq.no-open-quote", "cq.close-quote", "ncq.no-close-quote"));

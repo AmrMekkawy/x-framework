@@ -1,20 +1,9 @@
-/***********************************************/
-/* clip                                        */
-/***********************************************/
+//***********************************************/
+//* clip                                        */
+//***********************************************/
 
 /**
  * CSS property: clip
- * Emmet abbreviation:
+ * Emmet abbreviation: cp
  */
-
-
-/**
- * CSS property: clip-path
- * Emmet abbreviation:
- */
-
-
-/**
- * CSS property: clip-rule
- * Emmet abbreviation:
- */
+@include create-css-rule("clip", "cp", ("a.auto"));

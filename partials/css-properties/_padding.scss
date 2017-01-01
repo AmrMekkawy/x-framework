@@ -1,8 +1,38 @@
-/***********************************************/
-/* padding                                     */
-/***********************************************/
+//***********************************************/
+//* padding                                     */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * padding
+ * Emmet abbreviation: p
+ *
  */
+@include css-rule-with-integer-value("padding", "p", "px", $zero, $one-hundred, $one);
+
+/**
+ * padding-top
+ * Emmet abbreviation: pt
+ *
+ */
+@include css-rule-with-integer-value("padding-top", "pt", "px", $zero, $one-hundred, $one);
+
+/**
+ * padding-right
+ * Emmet abbreviation: pr
+ *
+ */
+@include css-rule-with-integer-value("padding-right", "pr", "px", $zero, $one-hundred, $one);
+
+/**
+ * padding-bottom
+ * Emmet abbreviation: pb
+ *
+ */
+@include css-rule-with-integer-value("padding-bottom", "pb", "px", $zero, $one-hundred, $one);
+
+/**
+ * padding-left
+ * Emmet abbreviation: pl
+ *
+ */
+@include css-rule-with-integer-value("padding-left", "pl", "px", $zero, $one-hundred, $one);

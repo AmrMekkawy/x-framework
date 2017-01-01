@@ -1,56 +1,46 @@
-/***********************************************/
-/* animation                                   */
-/***********************************************/
+//***********************************************/
+//* animation                                   */
+//***********************************************/
 
 /**
- * CSS property: animation
- * Emmet abbreviation:
+ * animation-delay
+ * Emmet abbreviation: animdel
  */
-
+// TODO:
 
 /**
- * CSS property: animation-delay
- * Emmet abbreviation:
+ * animation-direction
+ * Emmet abbreviation: animdir
  */
-
+@include create-css-rule("animation-direction", "animdir", ("a.alternate", "ar.alternate-reverse", "n.normal", "r.reverse"));
 
 /**
- * CSS property: animation-direction
- * Emmet abbreviation:
+ * animation-duration
+ * Emmet abbreviation: animdur
  */
-
+// TODO:
 
 /**
- * CSS property: animation-duration
- * Emmet abbreviation:
+ * animation-fill-mode
+ * Emmet abbreviation: animfm
  */
-
+@include create-css-rule("animation-fill-mode", "animfm", ("b.backwards", "bt.both", "bh.both", "f.forwards"));
 
 /**
- * CSS property: animation-fill-mode
- * Emmet abbreviation:
+ * animation-iteration-count
+ * Emmet abbreviation: animic
  */
-
+@include create-css-rule("animation-iteration-count", "animic", ("i.infinite"));
+@include css-rule-with-integer-value("animation-iteration-count", "animic", "", $zero, $ten, $one);
 
 /**
- * CSS property: animation-iteration-count
- * Emmet abbreviation:
+ * animation-play-state
+ * Emmet abbreviation: animps
  */
-
+@include create-css-rule("animation-play-state", "animps", ("p.paused", "r.running"));
 
 /**
- * CSS property: animation-name
- * Emmet abbreviation:
+ * animation-timing-function
+ * Emmet abbreviation: animtf
  */
-
-
-/**
- * CSS property: animation-play-state
- * Emmet abbreviation:
- */
-
-
-/**
- * CSS property: animation-timing-function
- * Emmet abbreviation:
- */
+@include create-css-rule("animation-timing-function", "animtf", ("e.ease", "ei.ease-in", "eio.ease-in-out", "eo.ease-out", "l.linear"));

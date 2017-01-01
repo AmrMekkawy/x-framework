@@ -1,61 +1,70 @@
-/***********************************************/
-/* background                                  */
-/***********************************************/
+//***********************************************/
+//* background                                  */
+//***********************************************/
 
 /**
- * CSS property: background
- * Emmet abbreviation:
+ * background
+ * Emmet abbreviation: bg
  */
-
+@include create-css-rule("background", "bg", ("n.none"));
 
 /**
- * CSS property: background-attachment
- * Emmet abbreviation:
+ * background-color
+ * Emmet abbreviation: bgc
  */
-
+@include create-css-rule("background-color", "bgc", $color-codes-list);
+@include create-css-rule("background-color", "bgc", $color-names-list);
 
 /**
- * CSS property: background-clip
- * Emmet abbreviation:
+ * background-image
+ * Emmet abbreviation: bgi
  */
-
+@include create-css-rule("background-image", "bgi", ("n.none"));
 
 /**
- * CSS property: background-color
- * Emmet abbreviation:
+ * background-repeat
+ * Emmet abbreviation: bgr
  */
-
+@include create-css-rule("background-repeat", "bgr", ("n.no-repeat", "x.repeat-x", "y.repeat-y", "sp.space", "rd.round"));
 
 /**
- * CSS property: background-image
- * Emmet abbreviation:
+ * background-attachment
+ * Emmet abbreviation: bga
  */
-
+@include create-css-rule("background-attachment", "bga", ("f.fixed", "s.scroll"));
 
 /**
- * CSS property: background-origin
- * Emmet abbreviation:
+ * background-position-x
+ * Emmet abbreviation: bgpx
  */
-
+// Not that important right now..
 
 /**
- * CSS property: background-position
- * Emmet abbreviation:
+ * background-position-y
+ * Emmet abbreviation: bgpy
  */
-
+// Not that important right now..
 
 /**
- * CSS property: background-repeat
- * Emmet abbreviation:
+ * background-break
+ * Emmet abbreviation: bgbk
  */
-
+@include create-css-rule("background-break", "bgbk", ("bb.bounding-box", "eb.each-box", "c.continuous"));
 
 /**
- * CSS property: background-size
- * Emmet abbreviation:
+ * background-clip
+ * Emmet abbreviation: bgcp
  */
+@include create-css-rule("background-clip", "bgcp", ("bb.border-box", "pb.padding-box", "cb.content-box", "nc.no-clip"));
 
+/**
+ * background-origin
+ * Emmet abbreviation: bgo
+ */
+@include create-css-rule("background-origin", "bgo", ("pb.padding-box", "bb.border-box", "cb.content-box"));
 
-
-
-
+/**
+ * background-size
+ * Emmet abbreviation: bgsz
+ */
+@include create-css-rule("background-size", "bgsz", ("a.auto", "ct.contain", "cv.cover"));

@@ -1,8 +1,9 @@
-/***********************************************/
-/* line                                        */
-/***********************************************/
+//***********************************************/
+//* line                                        */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * line-height
+ * Emmet abbreviation: lh
  */
+@include css-rule-with-integer-value("line-height", "lh", "px", $zero, $one-hundred, $one);

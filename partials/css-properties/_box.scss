@@ -1,32 +1,17 @@
-/***********************************************/
-/* align                                       */
-/***********************************************/
+//***********************************************/
+//* align                                       */
+//***********************************************/
 
 /**
- * CSS property: box-decoration-break
- * Emmet abbreviation:
+ * box-sizing
+ * Emmet abbreviation: bxz
+ *
  */
-
+@include create-css-rule("box-sizing", "bxz", ("cb.content-box", "bb.border-box"));
 
 /**
- * CSS property: box-shadow
- * Emmet abbreviation:
+ * box-shadow
+ * Emmet abbreviation: bxsh
+ *
  */
-
-
-/**
- * CSS property: box-sizing
- * Emmet abbreviation:
- */
-
-
-/**
- * CSS property: box-snap
- * Emmet abbreviation:
- */
-
-
-/**
- * CSS property: box-suppress
- * Emmet abbreviation:
- */
+@include create-css-rule("box-shadow", "bxsh", ("n.none"));

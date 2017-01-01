@@ -1,8 +1,15 @@
-/***********************************************/
-/* white                                      */
-/***********************************************/
+//***********************************************/
+//* white                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * white-space
+ * Emmet abbreviation: whs
  */
+@include create-css-rule("white-space", "whs", ("n.normal", "p.pre", "nw.nowrap", "pw.pre-wrap", "pl.pre-line"));
+
+/**
+ * white-space-collapse
+ * Emmet abbreviation: whsc
+ */
+@include create-css-rule("white-space-collapse", "whsc", ("n.normal", "k.keep-all", "l.loose", "bs.break-strict", "ba.break-all"));

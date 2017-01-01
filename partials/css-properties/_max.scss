@@ -1,8 +1,17 @@
-/***********************************************/
-/* max                                         */
-/***********************************************/
+//***********************************************/
+//* max                                         */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * max-width
+ * Emmet abbreviation: maw
  */
+@include create-css-rule("max-width", "maw", ("n.none"));
+@include css-rule-with-integer-value("max-width", "maw", "px", $zero, $one-hundred, $one);
+
+/**
+ * max-height
+ * Emmet abbreviation: mah
+ */
+@include create-css-rule("max-height", "mah", ("n.none"));
+@include css-rule-with-integer-value("max-height", "mah", "px", $zero, $one-hundred, $one);

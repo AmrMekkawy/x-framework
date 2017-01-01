@@ -1,8 +1,10 @@
-/***********************************************/
-/* right                                       */
-/***********************************************/
+//***********************************************/
+//* right                                       */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * CSS property: right
+ * Emmet abbreviation: r
  */
+@include create-css-rule("right", "r", ("a.auto"));
+@include css-rule-with-integer-value("right", "r", "px", $zero, $one-hundred, $one);

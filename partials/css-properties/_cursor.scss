@@ -1,8 +1,9 @@
-/***********************************************/
-/* cursor                                      */
-/***********************************************/
+//***********************************************/
+//* cursor                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * CSS property: cursor
+ * Emmet abbreviation: cur
  */
+@include create-css-rule("cursor", "cur", ("a.auto", "d.default", "c.crosshair", "ha.hand", "he.help", "m.move", "p.pointer", "t.text"));

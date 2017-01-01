@@ -1,14 +1,10 @@
-/***********************************************/
-/* color                                       */
-/***********************************************/
+//***********************************************/
+//* color                                       */
+//***********************************************/
 
 /**
- * CSS property: color
- * Emmet abbreviation:
+ * color
+ * Emmet abbreviation: c
  */
-
-
-/**
- * CSS property: color-interpolation-filters
- * Emmet abbreviation:
- */
+@include create-css-rule("color", "c", $color-codes-list);
+@include create-css-rule("color", "c", $color-names-list);

@@ -1,8 +1,9 @@
-/***********************************************/
-/* backface                                    */
-/***********************************************/
+//***********************************************/
+//* backface                                    */
+//***********************************************/
 
 /**
- * CSS property: backface-visibility
- * Emmet abbreviation:
+ * backface-visibility
+ * Emmet abbreviation: bfv
  */
+@include create-css-rule("backface-visibility", "bfv", ("h.hidden", "v.visible"));

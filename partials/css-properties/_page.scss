@@ -1,8 +1,21 @@
-/***********************************************/
-/* page                                        */
-/***********************************************/
+//***********************************************/
+//* page                                        */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * page-break-before
+ * Emmet abbreviation: pgbb
  */
+@include create-css-rule("page-break-before", "pgbb", ("au.auto", "al.always", "l.left", "r.right"));
+
+/**
+ * page-break-inside
+ * Emmet abbreviation: pgbi
+ */
+@include create-css-rule("page-break-inside", "pgbi", ("au.auto", "av.avoid"));
+
+/**
+ * page-break-after
+ * Emmet abbreviation: pgba
+ */
+@include create-css-rule("page-break-after", "pgba", ("au.auto", "al.always", "l.left", "r.right"));

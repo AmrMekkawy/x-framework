@@ -1,8 +1,9 @@
-/***********************************************/
-/* vertical                                    */
-/***********************************************/
+//***********************************************/
+//* vertical                                    */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * vertical-align
+ * Emmet abbreviation: va
  */
+@include create-css-rule("vertical-align", "va", ("sup.super", "t.top", "tt.text-top", "m.middle", "bl.baseline", "b.bottom", "tb.text-bottom", "sub.sub"));

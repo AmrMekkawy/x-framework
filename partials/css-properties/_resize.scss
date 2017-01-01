@@ -1,8 +1,9 @@
-/***********************************************/
-/* resize                                      */
-/***********************************************/
+//***********************************************/
+//* resize                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * CSS property: resize
+ * Emmet abbreviation: rsz
  */
+@include create-css-rule("resize", "rsz", ("n.none", "b.both", "h.horizontal", "v.vertical"));

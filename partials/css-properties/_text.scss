@@ -1,8 +1,82 @@
-/***********************************************/
-/* text                                        */
-/***********************************************/
+//***********************************************/
+//* text                                        */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * text-align
+ * Emmet abbreviation: ta
  */
+@include create-css-rule("text-align", "ta", ("l.left", "c.center", "r.right", "j.justify"));
+
+/**
+ * text-align-last
+ * Emmet abbreviation: tal
+ */
+@include create-css-rule("text-align-last", "tal", ("a.auto", "l.left", "c.center", "r.right"));
+
+/**
+ * text-decoration
+ * Emmet abbreviation: td
+ */
+@include create-css-rule("text-decoration", "td", ("n.none", "u.underline", "o.overline", "l.line-through"));
+
+/**
+ * text-emphasis
+ * Emmet abbreviation: te
+ */
+@include create-css-rule("text-emphasis", "te", ("n.none", "ac.accent", "dt.dot", "c.circle", "ds.disc", "b.before", "a.after"));
+
+/**
+ * text-height
+ * Emmet abbreviation: th
+ */
+@include create-css-rule("text-height", "th", ("a.auto", "f.font-size", "t.text-size", "m.max-size"));
+
+/**
+ * text-indent
+ * Emmet abbreviation: ti
+ */
+@include css-rule-with-integer-value("text-indent", "ti", "px", $zero, $fifty, $five);
+@include css-rule-with-integer-value("text-indent", "ti", "em", $zero, $ten, $one);
+
+/**
+ * text-justify
+ * Emmet abbreviation: tj
+ */
+@include create-css-rule("text-justify", "tj", ("a.auto", "iw.inter-word", "ii.inter-ideograph", "ic.inter-cluster", "d.distribute", "k.kashida", "t.tibetan"));
+
+/**
+ * text-outline
+ * Emmet abbreviation: to
+ */
+@include create-css-rule("text-outline", "to", ("n.none"));
+
+/**
+ * text-replace
+ * Emmet abbreviation: tr
+ */
+@include create-css-rule("text-replace", "tr", ("n.none"));
+
+/**
+ * text-transform
+ * Emmet abbreviation: tt
+ */
+@include create-css-rule("text-transform", "tt", ("n.none", "c.capitalize", "u.uppercase", "l.lowercase"));
+
+/**
+ * text-wrap
+ * Emmet abbreviation: tw
+ */
+@include create-css-rule("text-wrap", "tw", ("n.normal", "no.none", "u.unrestricted", "s.suppress"));
+
+/**
+ * text-shadow
+ * Emmet abbreviation: tsh
+ */
+@include create-css-rule("text-shadow", "tsh", ("n.none"));
+
+/**
+ * text-overflow
+ * Emmet abbreviation: tov
+ */
+@include create-css-rule("text-overflow", "tov", ("c.clip", "e.ellipsis"));

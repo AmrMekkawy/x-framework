@@ -1,0 +1,9 @@
+//***********************************************/
+//* orientation                                 */
+//***********************************************/
+
+/**
+ * orientation
+ * Emmet abbreviation: ori
+ */
+@include create-css-rule("orientation", "ori", ("l.landscape", "p.portrait"));

@@ -1,8 +1,36 @@
-/***********************************************/
-/* outline                                     */
-/***********************************************/
+//***********************************************/
+//* outline                                     */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * outline
+ * Emmet abbreviation: ol
  */
+@include create-css-rule("outline", "ol", ("n.none"));
+
+/**
+ * outline-offset
+ * Emmet abbreviation: olo
+ */
+@include css-rule-with-integer-value("outline-offset", "olo", "px", $zero, $twenty-five, $one);
+
+/**
+ * outline-width
+ * Emmet abbreviation: olw
+ */
+@include create-css-rule("outline-width", "olw", ("tn.thin", "m.medium", "tc.thick"));
+@include css-rule-with-integer-value("outline-width", "olw", "px", $zero, $ten, $one);
+
+/**
+ * outline-style
+ * Emmet abbreviation: ols
+ */
+@include create-css-rule("outline-style", "ols", ("n.none", "dt.dotted", "ds.dashed", "s.solid", "db.double", "g.groove", "r.ridge", "i.inset", "o.outset"));
+
+/**
+ * outline-color
+ * Emmet abbreviation: olc
+ */
+@include create-css-rule("outline-color", "olc", ("i.invert"));
+@include create-css-rule("outline-color", "olc", $color-codes-list);
+@include create-css-rule("outline-color", "olc", $color-names-list);

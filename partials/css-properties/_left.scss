@@ -1,8 +1,10 @@
-/***********************************************/
-/* left                                        */
-/***********************************************/
+//***********************************************/
+//* left                                        */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * CSS property: left
+ * Emmet abbreviation: l
  */
+@include create-css-rule("left", "l", ("a.auto"));
+@include css-rule-with-integer-value("left", "l", "px", $zero, $one-hundred, $one);

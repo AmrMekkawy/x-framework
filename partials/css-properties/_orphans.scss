@@ -1,8 +1,9 @@
-/***********************************************/
-/* orphans                                     */
-/***********************************************/
+//***********************************************/
+//* orphans                                     */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * orphans
+ * Emmet abbreviation: orp
  */
+@include css-rule-with-integer-value("orphans", "orp", "", $zero, $ten, $one);

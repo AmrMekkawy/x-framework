@@ -1,8 +1,10 @@
-/***********************************************/
-/* letter                                      */
-/***********************************************/
+//***********************************************/
+//* letter                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * letter-spacing
+ * Emmet abbreviation: lts
  */
+@include create-css-rule("letter-spacing", "lts", ("n.normal"));
+@include css-rule-with-integer-value("letter-spacing", "lts", "px", $zero, $ten, $one);

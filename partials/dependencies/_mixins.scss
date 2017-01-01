@@ -87,19 +87,23 @@
 
 
 
-// @mixin css-rule-for-integer-number($css-property, $emmet-abbreviation, $css-unit, $start-integer, $end-integer) {
-// 	@for $i from $start-integer through $end-integer {
-// 		.x-#{$emmet-abbreviation}-#{$i} {
-// 			#{$css-property}: unquote($i + $css-unit)
-// 		}
-// 	}
+// font-size with "em" unit for float numbers from 0.1 to $ten
+// $i: 0.1;
+// @while $i <= $ten {
+//     // inspect() function return a string containing the value as its Sass representation - https://goo.gl/VdkNpE
+//     $i-as-string: inspect($i);
+//     $digits-befor-dot: str-slice($i-as-string, 1, str-index($i-as-string, ".") - 1);
+//     $digits-after-dot: str-slice($i-as-string, str-index($i-as-string, ".") + 1);
+
+//     $n: #{$digits-befor-dot}#{$digits-after-dot};
+
+//     .x-fz-#{$n}-em {
+//         font-size: $i + em
+//     }
+
+//     $i: $i + 0.1;
 // }
 
-
-// @mixin border-radius($radius) {
-//     -webkit-border-radius: $radius;
-//             border-radius: $radius;
-// }
 
 
 // @mixin top($top) {

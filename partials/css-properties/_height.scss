@@ -1,8 +1,10 @@
-/***********************************************/
-/* height                                      */
-/***********************************************/
+//***********************************************/
+//* height                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * height
+ * Emmet abbreviation: h
  */
+@include create-css-rule("height", "h", ("a.auto"));
+@include css-rule-with-integer-value("height", "h", "px", $zero, $one-hundred, $one);

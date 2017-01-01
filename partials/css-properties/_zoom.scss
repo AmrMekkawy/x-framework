@@ -1,0 +1,10 @@
+//***********************************************/
+//* zoom                                        */
+//***********************************************/
+
+/**
+ * CSS property: zoom
+ * Emmet abbreviation: zoo, zm
+ */
+@include css-rule-with-integer-value("zoom", "zoo", "", $zero, $ten, $one);
+@include css-rule-with-integer-value("zoom", "zm", "", $zero, $ten, $one);

@@ -1,8 +1,9 @@
-/***********************************************/
-/* widows                                      */
-/***********************************************/
+//***********************************************/
+//* widows                                      */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * widows
+ * Emmet abbreviation: wid
  */
+@include css-rule-with-integer-value("widows", "wid", "", $zero, $ten, $one);

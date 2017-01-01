@@ -1,8 +1,9 @@
-/***********************************************/
-/* direction                                   */
-/***********************************************/
+//***********************************************/
+//* direction                                   */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * direction
+ * Emmet abbreviation: dr
  */
+@include create-css-rule("direction", "dr", ("ltr.ltr", "rtl.rtl"));

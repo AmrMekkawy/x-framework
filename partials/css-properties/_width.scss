@@ -1,8 +1,10 @@
-/***********************************************/
-/* width                                       */
-/***********************************************/
+//***********************************************/
+//* width                                       */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * width
+ * Emmet abbreviation: w
  */
+@include create-css-rule("width", "w", ("a.auto"));
+@include css-rule-with-integer-value("width", "w", "px", $zero, $one-hundred, $one);

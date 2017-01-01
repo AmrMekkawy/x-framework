@@ -1,8 +1,70 @@
-/***********************************************/
-/* font                                        */
-/***********************************************/
+//***********************************************/
+//* font                                        */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * font-weight
+ * Emmet abbreviation: fw
  */
+@include create-css-rule("font-weight", "fw", ("n.normal", "b.bold", "br.bolder", "lr.lighter", "100.100", "200.200", "300.300", "400.400", "500.500", "600.600", "700.700", "800.800", "900.900"));
+
+/**
+ * font-style
+ * Emmet abbreviation: fs
+ */
+@include create-css-rule("font-style", "fs", ("n.normal", "i.italic", "o.oblique"));
+
+/**
+ * font-variant
+ * Emmet abbreviation: fv
+ */
+@include create-css-rule("font-variant", "fv", ("n.normal", "sc.small-caps"));
+
+/**
+ * font-size
+ * Emmet abbreviation: fz
+ */
+@include css-rule-with-integer-value("font-size", "fz", "px", $zero, $one-hundred, $one);
+@include css-rule-with-integer-value("font-size", "fz", "em", $zero, $ten, $one);
+
+/**
+ * font-size-adjust
+ * Emmet abbreviation: fza
+ */
+@include create-css-rule("font-size-adjust", "fza", ("n.none"));
+
+/**
+ * font-family
+ * Emmet abbreviation: ff
+ */
+@include create-css-rule("font-family", "ff", ("s.serif", "ss.sans-serif", "c.cursive", "f.fantasy", "m.monospace", "a.Arial,'Helvetica Neue',Helvetica,sans-serif", "t.'Times New Roman',Times,Baskerville,Georgia,serif", "v.Verdana,Geneva,sans-serif"));
+
+/**
+ * font-effect
+ * Emmet abbreviation: fef
+ */
+@include create-css-rule("font-effect", "fef", ("n.none", "eg.engrave", "eb.emboss", "o.outline"));
+
+/**
+ * font-emphasize-position
+ * Emmet abbreviation: femp
+ */
+@include create-css-rule("font-emphasize-position", "femp", ("b.before", "a.after"));
+
+/**
+ * font-emphasize-style
+ * Emmet abbreviation: fems
+ */
+@include create-css-rule("font-emphasize-style", "fems", ("n.none", "ac.accent", "dt.dot", "c.circle", "ds.disc"));
+
+/**
+ * font-smooth
+ * Emmet abbreviation: fsm
+ */
+@include create-css-rule("font-smooth", "fsm", ("a.auto", "n.never", "aw.always"));
+
+/**
+ * font-stretch
+ * Emmet abbreviation: fst
+ */
+@include create-css-rule("font-stretch", "fst", ("n.normal", "uc.ultra-condensed", "ec.extra-condensed", "c.condensed", "sc.semi-condensed", "se.semi-expanded", "e.expanded", "ee.extra-expanded", "ue.ultra-expanded"));

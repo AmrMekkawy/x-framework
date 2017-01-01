@@ -1,8 +1,9 @@
-/***********************************************/
-/* caption                                     */
-/***********************************************/
+//***********************************************/
+//* caption                                     */
+//***********************************************/
 
 /**
- * CSS property: caption-side
- * Emmet abbreviation:
+ * caption-side
+ * Emmet abbreviation: cps
  */
+@include create-css-rule("caption-side", "cps", ("t.top", "b.bottom"));

@@ -1,8 +1,9 @@
-/***********************************************/
-/* visibility                                  */
-/***********************************************/
+//***********************************************/
+//* visibility                                  */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * CSS property: visibility
+ * Emmet abbreviation: v
  */
+@include create-css-rule("visibility", "v", ("v.visible", "h.hidden", "c.collapse"));

@@ -1,8 +1,10 @@
-/***********************************************/
-/* top                                         */
-/***********************************************/
+//***********************************************/
+//* top                                         */
+//***********************************************/
 
 /**
- * CSS property:
- * Emmet abbreviation:
+ * CSS property: top
+ * Emmet abbreviation: t
  */
+@include create-css-rule("top", "t", ("a.auto"));
+@include css-rule-with-integer-value("top", "t", "px", $zero, $one-hundred, $one);

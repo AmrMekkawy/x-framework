@@ -1,12 +1,216 @@
 @import "partials/dependencies/_dependencies-list.scss";
 
-// @import "partials/css-property-groups/_visual-formatting.scss";
 
-// color group
-// @import "partials/css-property-groups/color-group/x-framework-color-properties.scss";
+/**********************************************************/
+/*	Visual Formatting                                     */
+/**********************************************************/
+// "position" properties
+@import "partials/css-properties/_position.scss";
+
+// "top" properties
+@import "partials/css-properties/_top.scss";
+
+// "bottom" properties
+@import "partials/css-properties/_bottom.scss";
+
+// "left" properties
+@import "partials/css-properties/_left.scss";
+
+// "right" properties
+@import "partials/css-properties/_right.scss";
+
+// "z-index" properties
+@import "partials/css-properties/_z.scss";
+
+// "float" properties
+@import "partials/css-properties/_float.scss";
+
+// "clear" properties
+@import "partials/css-properties/_clear.scss";
+
+// "display" properties
+@import "partials/css-properties/_display.scss";
+
+// "visibility" properties
+@import "partials/css-properties/_visibility.scss";
+
+// "overflow" properties
+@import "partials/css-properties/_overflow.scss";
+
+// "zoom" properties
+@import "partials/css-properties/_zoom.scss";
+
+// "clip" properties
+@import "partials/css-properties/_clip.scss";
+
+// "resize" properties
+@import "partials/css-properties/_resize.scss";
+
+// "cursor" properties
+@import "partials/css-properties/_cursor.scss";
+
+
+/**********************************************************/
+/*	Margin & Padding                                      */
+/**********************************************************/
+// "margin" properties
+@import "partials/css-properties/_margin.scss";
+
+// "padding" properties
+@import "partials/css-properties/_padding.scss";
+
+
+/**********************************************************/
+/*	Box Sizing                                            */
+/**********************************************************/
+// "box" properties
+@import "partials/css-properties/_box.scss";
+
+// "width" properties
+@import "partials/css-properties/_width.scss";
+
+// "height" properties
+@import "partials/css-properties/_height.scss";
+
+// "max" properties
+@import "partials/css-properties/_max.scss";
+
+// "min" properties
+@import "partials/css-properties/_min.scss";
+
+
+/**********************************************************/
+/*	Font                                                  */
+/**********************************************************/
+// "font" properties
+@import "partials/css-properties/_font.scss";
+
+
+/**********************************************************/
+/*	Text                                                  */
+/**********************************************************/
+// "vertical" properties
+@import "partials/css-properties/_vertical.scss";
+
+// "text" properties
+@import "partials/css-properties/_text.scss";
+
+// "line" properties
+@import "partials/css-properties/_line.scss";
+
+// "letter" properties
+@import "partials/css-properties/_letter.scss";
+
+// "white" properties
+@import "partials/css-properties/_white.scss";
+
+// "word" properties
+@import "partials/css-properties/_word.scss";
+
+
+/**********************************************************/
+/*	Background                                            */
+/**********************************************************/
+// "background" properties
+@import "partials/css-properties/_background.scss";
+
+
+/**********************************************************/
+/*	Color                                                 */
+/**********************************************************/
+// "color" properties
 @import "partials/css-properties/_color.scss";
 
+// "opacity" properties
+@import "partials/css-properties/_opacity.scss";
 
 
+/**********************************************************/
+/*	Generated content                                     */
+/**********************************************************/
+// "content" properties
+@import "partials/css-properties/_content.scss";
+
+// "quotes" properties
+@import "partials/css-properties/_quotes.scss";
 
 
+/**********************************************************/
+/*	Outline                                               */
+/**********************************************************/
+// "outline" properties
+@import "partials/css-properties/_outline.scss";
+
+
+/**********************************************************/
+/*	Tables                                                */
+/**********************************************************/
+// "table" properties
+@import "partials/css-properties/_table.scss";
+
+// "caption" properties
+@import "partials/css-properties/_caption.scss";
+
+// "empty" properties
+@import "partials/css-properties/_empty.scss";
+
+
+/**********************************************************/
+/*	Border                                                */
+/**********************************************************/
+// "border" properties
+@import "partials/css-properties/_border.scss";
+
+
+/**********************************************************/
+/*	Lists                                                 */
+/**********************************************************/
+// "list" properties
+@import "partials/css-properties/_list.scss";
+
+
+/**********************************************************/
+/*	Print                                                 */
+/**********************************************************/
+// "page" properties
+@import "partials/css-properties/_page.scss";
+
+// "orphans" properties
+@import "partials/css-properties/_orphans.scss";
+
+// "widows" properties
+@import "partials/css-properties/_widows.scss";
+
+
+/**********************************************************/
+/*	Others                                                */
+/**********************************************************/
+// "align" properties
+@import "partials/css-properties/_align.scss";
+
+// "animation" properties
+@import "partials/css-properties/_animation.scss";
+
+// "backface" properties
+@import "partials/css-properties/_backface.scss";
+
+// "column" properties
+@import "partials/css-properties/_column.scss";
+
+// "flex" properties
+@import "partials/css-properties/_flex.scss";
+
+// "justify" properties
+@import "partials/css-properties/_justify.scss";
+
+// "order" properties
+@import "partials/css-properties/_order.scss";
+
+// "orientation" properties
+@import "partials/css-properties/_orientation.scss";
+
+// "writing" properties
+@import "partials/css-properties/_writing.scss";
+
+// "direction" properties
+@import "partials/css-properties/_direction.scss";
