@@ -20,7 +20,7 @@ $i: 0.1;
     $n: #{$digits-befor-dot}#{$digits-after-dot};
 
     .x-op-#{$n} {
-        opacity: $i
+        opacity: $i !important
     }
 
     $i: $i + 0.1;

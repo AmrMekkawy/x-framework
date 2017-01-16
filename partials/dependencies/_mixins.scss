@@ -5,7 +5,7 @@
 	    $str-after-dot: str-slice($item, $dot-index + 1);
 
 	    .x-#{$emmet-abbreviation}-#{$str-befor-dot} {
-	        #{$css-property}: #{$str-after-dot}
+	        #{$css-property}: #{$str-after-dot} !important
 	    }
 	}
 }
@@ -33,7 +33,7 @@
 
 	@while $i <= $end-value {
 	    .x-#{$emmet-abbreviation}-#{$i}#{$u} {
-	        #{$css-property}: unquote($i + $css-unit)
+	        #{$css-property}: unquote($i + $css-unit) !important
 	    }
 
 	    $i: $i + $increment-by;
