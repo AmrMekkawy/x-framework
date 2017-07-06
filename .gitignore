@@ -1,0 +1,2 @@
+# more about ignoring node_modules folder everywhere see: https://goo.gl/9GYxR8 or https://goo.gl/Jo1Y7k
+node_modules/

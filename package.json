@@ -1,0 +1,12 @@
+{
+    "name": "x-framework",
+    "version": "",
+    "main": "",
+    "repository": "https://github.com/AmrMekkawy/x-framework.git",
+    "author": "Amr Mekkawy <amr.mekkawy@gmail.com>",
+    "license": "MIT",
+    "dependencies": {},
+    "devDependencies": {
+        "gulp": "^3.9.1"
+    }
+}
