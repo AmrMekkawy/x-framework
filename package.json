@@ -1,7 +1,16 @@
 {
     "name": "x-framework",
     "version": "",
-    "main": "",
+    "description": "A minimalist CSS framework",
+    "main": "dist/css/x-framework.min.css",
+    "keywords": [
+        "css",
+        "sass",
+        "emmet",
+        "front-end",
+        "framework",
+        "web"
+    ],
     "repository": "https://github.com/AmrMekkawy/x-framework.git",
     "author": "Amr Mekkawy <amr.mekkawy@gmail.com>",
     "license": "MIT",
