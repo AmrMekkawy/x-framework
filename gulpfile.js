@@ -11,14 +11,18 @@ var sass = require('gulp-sass');
 // gulp-concat: helps concatinating files
 var concat = require('gulp-concat');
 
+// gulp-cssnano: helps minifing css code
+var cssnano = require('gulp-cssnano');
+
 // --------------------------------------------------------------------
 
 // Converts Sass to CSS with gulp-sass plugin
 // more info about gulp-sass plugin see: https://goo.gl/XSwgu9
 gulp.task('sass', function() {
     return gulp.src([
-            'src/scss/test.scss',
-            'src/scss/x-framework.scss'
+            // 'src/scss/x-framework.scss',
+            'src/scss/test-1.scss',
+            'src/scss/test-2.scss'
         ])
         .pipe(sass({
                 outputStyle: 'compact' // available values: nested, expanded, compact, compressed
@@ -31,6 +35,9 @@ gulp.task('sass', function() {
 // --------------------------------------------------------------------
 
 // more info about gulp-concat plugin see: https://goo.gl/N1dbLD
+
+/*
+// concatinating javascript files
 gulp.task('concatJS', function() {
     return gulp.src([
             'src/js/file1.js',
@@ -40,6 +47,27 @@ gulp.task('concatJS', function() {
         .pipe(concat('build.js'))
         .pipe(gulp.dest('dist/js'));
 });
+*/
+
+// concatinating css files
+gulp.task('concatCSS', function() {
+    return gulp.src([
+            // 'src/css/x-framework.css',
+            'dist/css/test-1.css',
+            'dist/css/test-2.css'
+        ])
+        .pipe(concat('build.css'))
+        .pipe(gulp.dest('dist/css'));
+});
+
+// --------------------------------------------------------------------
+
+
+gulp.task('minifyCSS', function() {
+    return gulp.src('dist/css/*.css')
+        .pipe(cssnano())
+        .pipe(gulp.dest('dist/css'));
+});
 
 // --------------------------------------------------------------------
 
@@ -47,8 +75,10 @@ gulp.task('concatJS', function() {
 // and gulp watch separately, so let's get Gulp to run them together by telling the 
 // watch task that browserSync must be completed before watch is allowed to run.
 gulp.task('watch', function() {
-    // apply sass task when any file ending with .scss changes in src/scss dir and sub dirs
+    // apply sass and concatCSS tasks when any file ending with .scss changes in src/scss dir and sub dirs
     gulp.watch('src/scss/**/*.scss', ['sass']);
+    gulp.watch('dist/css/**/*.css', ['concatCSS', 'minifyCSS']);
+
     // apply concatJS task when any file ending with .js changes in src/js dir and sub dirs
-    gulp.watch('src/js/**/*.js', ['concatJS']);
+    // gulp.watch('src/js/**/*.js', ['concatJS']);
 });
