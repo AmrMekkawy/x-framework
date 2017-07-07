@@ -11,21 +11,6 @@ var sass = require('gulp-sass');
 // gulp-concat: helps concatinating files
 var concat = require('gulp-concat');
 
-// browser-sync: helps make web development easier by spinning up a web server that helps us do live-reloading easily
-var browserSync = require('browser-sync').create();
-
-// --------------------------------------------------------------------
-
-// live-reloading with browser-sync plugin
-// more info about browser-sync plugin see: https://goo.gl/P3Bz4u
-gulp.task('browserSync', function() {
-    browserSync.init({
-        server: {
-            baseDir: 'src'
-        },
-    });
-});
-
 // --------------------------------------------------------------------
 
 // Converts Sass to CSS with gulp-sass plugin
@@ -40,10 +25,7 @@ gulp.task('sass', function() {
             })
             .on('error', sass.logError)
         )
-        .pipe(gulp.dest('dist/css'))
-        .pipe(browserSync.reload({ // because we use browser-sync plugin
-            stream: true
-        }));
+        .pipe(gulp.dest('dist/css'));
 });
 
 // --------------------------------------------------------------------
@@ -64,11 +46,9 @@ gulp.task('concatJS', function() {
 // It'll be cumbersome to open up two command line windows and run gulp browserSync 
 // and gulp watch separately, so let's get Gulp to run them together by telling the 
 // watch task that browserSync must be completed before watch is allowed to run.
-gulp.task('watch', ['browserSync', 'sass'], function() {
-    // Gets all files ending with .scss in src/scss and children dirs
+gulp.task('watch', function() {
+    // apply sass task when any file ending with .scss changes in src/scss dir and sub dirs
     gulp.watch('src/scss/**/*.scss', ['sass']);
-
-    // Reloads the browser whenever HTML or JS files change
-    gulp.watch('src/*.html', browserSync.reload);
-    gulp.watch('src/js/**/*.js', ['concatJS', browserSync.reload]);
+    // apply concatJS task when any file ending with .js changes in src/js dir and sub dirs
+    gulp.watch('src/js/**/*.js', ['concatJS']);
 });
