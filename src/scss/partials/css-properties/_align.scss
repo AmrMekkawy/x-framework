@@ -6,16 +6,19 @@
  * align-content
  * Emmet abbreviation: ac
  */
+
 @include create-css-rule("align-content", "ac", ("c.center", "fe.flex-end", "fs.flex-start", "s.stretch", "sa.space-around", "sb.space-between"));
 
 /**
  * align-items
  * Emmet abbreviation: ai
  */
+
 @include create-css-rule("align-items", "ai", ("b.baseline", "c.center", "fe.flex-end", "fs.flex-start", "s.stretch"));
 
 /**
  * align-self
  * Emmet abbreviation: as
  */
+
 @include create-css-rule("align-self", "as", ("a.auto", "b.baseline", "c.center", "fe.flex-end", "fs.flex-start", "s.stretch"));

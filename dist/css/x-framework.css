@@ -1223,7 +1223,7 @@
 /**********************************************************/
 /*	Margin & Padding                                      */
 /**********************************************************/
-/** margin Emmet abbreviation: m  */
+/** margin Emmet abbreviation: m */
 .x-m-a { margin: auto !important; }
 
 .x-m-0 { margin: 0px !important; }
@@ -1428,7 +1428,7 @@
 
 .x-m-100 { margin: 100px !important; }
 
-/** margin-top Emmet abbreviation: mt  */
+/** margin-top Emmet abbreviation: mt */
 .x-mt-a { margin-top: auto !important; }
 
 .x-mt-0 { margin-top: 0px !important; }
@@ -1633,7 +1633,7 @@
 
 .x-mt-100 { margin-top: 100px !important; }
 
-/** margin-right Emmet abbreviation: mr  */
+/** margin-right Emmet abbreviation: mr */
 .x-mr-a { margin-right: auto !important; }
 
 .x-mr-0 { margin-right: 0px !important; }
@@ -1838,7 +1838,7 @@
 
 .x-mr-100 { margin-right: 100px !important; }
 
-/** margin-bottom Emmet abbreviation: mb  */
+/** margin-bottom Emmet abbreviation: mb */
 .x-mb-a { margin-bottom: auto !important; }
 
 .x-mb-0 { margin-bottom: 0px !important; }
@@ -2043,7 +2043,7 @@
 
 .x-mb-100 { margin-bottom: 100px !important; }
 
-/** margin-left Emmet abbreviation: ml  */
+/** margin-left Emmet abbreviation: ml */
 .x-ml-a { margin-left: auto !important; }
 
 .x-ml-0 { margin-left: 0px !important; }
@@ -2248,7 +2248,7 @@
 
 .x-ml-100 { margin-left: 100px !important; }
 
-/** padding Emmet abbreviation: p  */
+/** padding Emmet abbreviation: p */
 .x-p-0 { padding: 0px !important; }
 
 .x-p-1 { padding: 1px !important; }
@@ -2451,7 +2451,7 @@
 
 .x-p-100 { padding: 100px !important; }
 
-/** padding-top Emmet abbreviation: pt  */
+/** padding-top Emmet abbreviation: pt */
 .x-pt-0 { padding-top: 0px !important; }
 
 .x-pt-1 { padding-top: 1px !important; }
@@ -2654,7 +2654,7 @@
 
 .x-pt-100 { padding-top: 100px !important; }
 
-/** padding-right Emmet abbreviation: pr  */
+/** padding-right Emmet abbreviation: pr */
 .x-pr-0 { padding-right: 0px !important; }
 
 .x-pr-1 { padding-right: 1px !important; }
@@ -2857,7 +2857,7 @@
 
 .x-pr-100 { padding-right: 100px !important; }
 
-/** padding-bottom Emmet abbreviation: pb  */
+/** padding-bottom Emmet abbreviation: pb */
 .x-pb-0 { padding-bottom: 0px !important; }
 
 .x-pb-1 { padding-bottom: 1px !important; }
@@ -3060,7 +3060,7 @@
 
 .x-pb-100 { padding-bottom: 100px !important; }
 
-/** padding-left Emmet abbreviation: pl  */
+/** padding-left Emmet abbreviation: pl */
 .x-pl-0 { padding-left: 0px !important; }
 
 .x-pl-1 { padding-left: 1px !important; }
@@ -3266,12 +3266,12 @@
 /**********************************************************/
 /*	Box Sizing                                            */
 /**********************************************************/
-/** box-sizing Emmet abbreviation: bxz  */
+/** box-sizing Emmet abbreviation: bxz */
 .x-bxz-cb { box-sizing: content-box !important; }
 
 .x-bxz-bb { box-sizing: border-box !important; }
 
-/** box-shadow Emmet abbreviation: bxsh  */
+/** box-shadow Emmet abbreviation: bxsh */
 .x-bxsh-n { box-shadow: none !important; }
 
 /** width Emmet abbreviation: w */
@@ -7858,5 +7858,3 @@
 .x-dr-ltr { direction: ltr !important; }
 
 .x-dr-rtl { direction: rtl !important; }
-
-/*# sourceMappingURL=x-framework.css.map */
