@@ -20,6 +20,9 @@ var rename = require("gulp-rename");
 // run-sequence: helps run a series of dependent gulp tasks in order https://goo.gl/24fhj4
 var runSequence = require('run-sequence')
 
+// gulp-clean: helps removing files and folders https://goo.gl/2eLLuk
+var clean = require('gulp-clean');
+
 // --------------------------------------------------------------------
 
 // Converts Sass to CSS with gulp-sass plugin
@@ -83,15 +86,22 @@ gulp.task('minifyCSS', function() {
 
 // --------------------------------------------------------------------
 
+gulp.task('clean', function() {
+    return gulp.src('dist/css', { read: false })
+        .pipe(clean());
+});
+
+// --------------------------------------------------------------------
+
 
 gulp.task('build', function(callback) {
-    runSequence('sass', 'concatCSS', 'minifyCSS', callback);
+    runSequence('clean', 'sass', 'concatCSS', 'minifyCSS', callback);
 });
 
 // --------------------------------------------------------------------
 
 gulp.task('default', function(callback) {
-    runSequence('sass', 'concatCSS', 'minifyCSS', callback);
+    runSequence('clean', 'sass', 'concatCSS', 'minifyCSS', callback);
 });
 
 // --------------------------------------------------------------------
