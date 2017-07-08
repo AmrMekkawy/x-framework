@@ -14,6 +14,9 @@ var concat = require('gulp-concat');
 // gulp-cssnano: helps minifing css code
 var cssnano = require('gulp-cssnano');
 
+// gulp-rename: helps renaming files
+var rename = require("gulp-rename");
+
 // --------------------------------------------------------------------
 
 // Converts Sass to CSS with gulp-sass plugin
@@ -63,9 +66,15 @@ gulp.task('concatCSS', function() {
 // --------------------------------------------------------------------
 
 
+// more info see: https://goo.gl/yhYoKc & https://goo.gl/qWA4T6
 gulp.task('minifyCSS', function() {
     return gulp.src('dist/css/*.css')
         .pipe(cssnano())
+        .pipe(rename(function(path) {
+            path.dirname += "";
+            path.basename += ".min";
+            path.extname = ".css";
+        }))
         .pipe(gulp.dest('dist/css'));
 });
 
@@ -74,10 +83,10 @@ gulp.task('minifyCSS', function() {
 // It'll be cumbersome to open up two command line windows and run gulp browserSync 
 // and gulp watch separately, so let's get Gulp to run them together by telling the 
 // watch task that browserSync must be completed before watch is allowed to run.
-gulp.task('watch', function() {
+gulp.task('watch', ['sass', 'concatCSS', 'minifyCSS'], function() {
     // apply sass and concatCSS tasks when any file ending with .scss changes in src/scss dir and sub dirs
-    gulp.watch('src/scss/**/*.scss', ['sass']);
-    gulp.watch('dist/css/**/*.css', ['concatCSS', 'minifyCSS']);
+    gulp.watch('src/scss/**/*.scss', ['sass', 'concatCSS', 'minifyCSS']);
+    // gulp.watch('dist/css/**/*.css', ['concatCSS', 'minifyCSS']);
 
     // apply concatJS task when any file ending with .js changes in src/js dir and sub dirs
     // gulp.watch('src/js/**/*.js', ['concatJS']);
