@@ -1,6 +1,4 @@
-// Gulp for beginners: https://goo.gl/ZVJvBt
-
-// define locations of used directories
+// define locations of the used directories
 var dirs = {
     src: {
         scss: 'src/scss',
@@ -14,41 +12,47 @@ var dirs = {
     }
 };
 
-// The require statement tells Node to look into the node_modules folder
-// for a package named gulp. Once the package is found, 
-// we assign its contents to the variable gulp. more info: https://goo.gl/ZVJvBt
+// "require" statement tells Node to look into the node_modules folder
+// for the specified package. Once the package is found, we assign its
+// contents to a variable so that we can use it later in the code
 var gulp = require('gulp');
 
-// gulp-sass: converts Sass to CSS
+// gulp-sass: a plugin that converts sass to css
+// more info: https://goo.gl/XSwgu9
 var sass = require('gulp-sass');
 
-// gulp-concat: helps concatinating files
+// gulp-concat: a plugin that helps concatinating files
+// more info: https://goo.gl/N1dbLD
 var concat = require('gulp-concat');
 
-// gulp-cssnano: helps minifing css code
+// gulp-cssnano: a plugin that helps minifing css code
+// more info: https://goo.gl/yhYoKc
 var cssnano = require('gulp-cssnano');
 
-// gulp-rename: helps renaming files
+// gulp-rename: a plugin that helps renaming files
+// more info: https://goo.gl/qWA4T6
 var rename = require('gulp-rename');
 
-// run-sequence: helps run a series of dependent gulp tasks in order https://goo.gl/24fhj4
+// run-sequence: a plugin that helps run a series of dependent gulp 
+// tasks in order. more info: https://goo.gl/24fhj4
 var runSequence = require('run-sequence')
 
-// gulp-clean: helps removing files and folders https://goo.gl/2eLLuk
+// gulp-clean: a plugin that helps removing/deleting files and folders
+// more info: https://goo.gl/2eLLuk
 var clean = require('gulp-clean');
 
-// gulp-newer: A Gulp plugin for passing through only those source files that are 
-// newer than corresponding destination files. more info: https://goo.gl/16jiiw
+// gulp-newer: a plugin that passing through only those source files
+// that are newer than corresponding destination files
+// more info: https://goo.gl/16jiiw
 var newer = require('gulp-newer');
 
-// gulp-imagemin: helps minify PNG, JPEG, GIF and SVG images
+// gulp-imagemin: a plugin that help minify png, jpeg, gif & svg images
 // more info: https://goo.gl/uFVm8v
 var imagemin = require('gulp-imagemin');
 
 // --------------------------------------------------------------------
 
-// Converts Sass to CSS with gulp-sass plugin
-// more info about gulp-sass plugin see: https://goo.gl/XSwgu9
+// converting sass to css 
 gulp.task('sass', function() {
     return gulp.src([
             // dirs.src.scss + '/x-framework.scss',
@@ -56,7 +60,8 @@ gulp.task('sass', function() {
             dirs.src.scss + '/test-2.scss'
         ])
         .pipe(sass({
-                outputStyle: 'compact' // available values: nested, expanded, compact, compressed
+                // available values: nested, expanded, compact, compressed
+                outputStyle: 'compact'
             })
             .on('error', sass.logError)
         )
@@ -64,8 +69,6 @@ gulp.task('sass', function() {
 });
 
 // --------------------------------------------------------------------
-
-// more info about gulp-concat plugin see: https://goo.gl/N1dbLD
 
 /*
 // concatinating javascript files
@@ -93,7 +96,7 @@ gulp.task('concatCSS', function() {
 
 // --------------------------------------------------------------------
 
-// more info see: https://goo.gl/yhYoKc & https://goo.gl/qWA4T6
+// minifying and renaming css
 gulp.task('minifyCSS', function() {
     return gulp.src(dirs.dist.css + '/*.css')
         .pipe(cssnano())
@@ -107,43 +110,52 @@ gulp.task('minifyCSS', function() {
 
 // --------------------------------------------------------------------
 
-gulp.task('clean', function() {
+// removing/deleting existing css files
+gulp.task('deleteCSS', function() {
     return gulp.src(dirs.dist.css, { read: false })
         .pipe(clean());
 });
 
 // --------------------------------------------------------------------
 
-// Minify any new images
+// a task that run some other tasks in sequence for building css files
+gulp.task('buildCSS', function(callback) {
+    // running tasks in sequance
+    runSequence('deleteCSS', 'sass', 'concatCSS', 'minifyCSS', callback);
+});
+
+// --------------------------------------------------------------------
+
+// minifying new images
 gulp.task('minifyImages', function() {
     return gulp.src(dirs.src.img + '/**/*')
         .pipe(newer(dirs.dist.img))
-        // .pipe(imagemin({ optimizationLevel: 5 }))
-        .pipe(imagemin())
+        // .pipe(imagemin())
+        .pipe(imagemin({ optimizationLevel: 5 }))
         .pipe(gulp.dest(dirs.dist.img));
 });
 
 // --------------------------------------------------------------------
 
+gulp.task('watch', ['buildCSS', 'minifyImages'], function() {
+    // apply buildCSS task when any file ending with .scss changes
+    // in dirs.src.scss directory and sub directories
+    gulp.watch(dirs.src.scss + '/**/*.scss', ['buildCSS']);
 
-gulp.task('build', function(callback) {
-    runSequence('clean', 'sass', 'concatCSS', 'minifyCSS', callback);
-});
-
-// --------------------------------------------------------------------
-
-gulp.task('default', function(callback) {
-    runSequence('clean', 'sass', 'concatCSS', 'minifyCSS', callback);
-});
-
-// --------------------------------------------------------------------
-
-gulp.task('watch', ['build'], function() {
-    // apply sass and concatCSS tasks when any file ending with .scss changes in dirs.src.scss dir and sub dirs
-    gulp.watch(dirs.src.scss + '/**/*.scss', ['build']);
-
+    // apply minifyImages task when any new image is being added
+    // to dirs.src.img directory and sub directories
     gulp.watch(dirs.src.img + '/**/*', ['minifyImages']);
 
-    // apply concatJS task when any file ending with .js changes in dirs.src.js dir and sub dirs
-    // gulp.watch(dirs.src.js + '/**/*.js', ['concatJS']);
+    // apply buildJS task when any file ending with .js changes 
+    // in dirs.src.js directory and sub directories
+    // gulp.watch(dirs.src.js + '/**/*.js', ['buildJS']);
+});
+
+// --------------------------------------------------------------------
+
+// the default task that should be executed if we type the command 
+// "gulp" in the terminal
+gulp.task('default', function(callback) {
+    // running tasks in sequance
+    runSequence('buildCSS', 'minifyImages', 'watch', callback);
 });
