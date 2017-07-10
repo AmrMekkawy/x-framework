@@ -6,12 +6,14 @@
  * max-width
  * Emmet abbreviation: maw
  */
+
 @include create-css-rule("max-width", "maw", ("n.none"));
-@include css-rule-with-integer-value("max-width", "maw", "px", $zero, $one-hundred, $one);
+@include css-rule-with-integer-value("max-width", "maw", "px", $zero, $five-hundred, $five);
 
 /**
  * max-height
  * Emmet abbreviation: mah
  */
+
 @include create-css-rule("max-height", "mah", ("n.none"));
-@include css-rule-with-integer-value("max-height", "mah", "px", $zero, $one-hundred, $one);
+@include css-rule-with-integer-value("max-height", "mah", "px", $zero, $five-hundred, $five);

@@ -6,16 +6,19 @@
  * word-break
  * Emmet abbreviation: wob
  */
+
 @include create-css-rule("word-break", "wob", ("n.normal", "k.keep-all", "ba.break-all"));
 
 /**
  * word-spacing
  * Emmet abbreviation: wos
  */
-@include css-rule-with-integer-value("word-spacing", "wos", "px", $zero, $ten, $one);
+
+@include css-rule-with-integer-value("word-spacing", "wos", "px", $zero, $twenty-five, $one);
 
 /**
  * word-wrap
  * Emmet abbreviation: wow
  */
+
 @include create-css-rule("word-wrap", "wow", ("nm.normal", "n.none", "u.unrestricted", "s.suppress", "b.break-word"));

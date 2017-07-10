@@ -6,5 +6,7 @@
  * CSS property: left
  * Emmet abbreviation: l
  */
+
 @include create-css-rule("left", "l", ("a.auto"));
-@include css-rule-with-integer-value("left", "l", "px", $zero, $one-hundred, $one);
+@include css-rule-with-integer-value("left", "l", "px", $zero, $twenty-five, $one);
+@include css-rule-with-integer-value("left", "l", "px", $thirty, $two-hundred-fifty, $five);

@@ -55,9 +55,9 @@ var imagemin = require('gulp-imagemin');
 // converting sass to css 
 gulp.task('sass', function() {
     return gulp.src([
-            // dirs.src.scss + '/x-framework.scss',
-            dirs.src.scss + '/test-1.scss',
-            dirs.src.scss + '/test-2.scss'
+            // dirs.src.scss + '/test-1.scss',
+            // dirs.src.scss + '/test-2.scss',
+            dirs.src.scss + '/x-framework.scss'
         ])
         .pipe(sass({
                 // available values: nested, expanded, compact, compressed
@@ -86,11 +86,12 @@ gulp.task('concatJS', function() {
 // concatinating css files
 gulp.task('concatCSS', function() {
     return gulp.src([
-            // dirs.dist.css + '/x-framework.css',
-            dirs.dist.css + '/test-1.css',
-            dirs.dist.css + '/test-2.css'
+            // dirs.dist.css + '/test-1.css',
+            // dirs.dist.css + '/test-2.css',
+            dirs.dist.css + '/x-framework.css'
         ])
-        .pipe(concat('build.css'))
+        // .pipe(concat('build.css'))
+        .pipe(concat('x-framework.css'))
         .pipe(gulp.dest(dirs.dist.css));
 });
 
@@ -98,7 +99,7 @@ gulp.task('concatCSS', function() {
 
 // minifying and renaming css
 gulp.task('minifyCSS', function() {
-    return gulp.src(dirs.dist.css + '/*.css')
+    return gulp.src([dirs.dist.css + '/**/*.css'])
         .pipe(cssnano())
         .pipe(rename(function(path) {
             path.dirname += '';
@@ -112,7 +113,10 @@ gulp.task('minifyCSS', function() {
 
 // removing/deleting existing css files
 gulp.task('deleteCSS', function() {
-    return gulp.src(dirs.dist.css, { read: false })
+    return gulp.src([
+            dirs.dist.css + '/**/*.css',
+            dirs.dist.css + '/**/*.map'
+        ], { read: false })
         .pipe(clean());
 });
 

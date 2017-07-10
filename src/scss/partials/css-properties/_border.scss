@@ -6,248 +6,288 @@
  * border
  * Emmet abbreviation: bd
  */
+
 @include create-css-rule("border", "bd", ("n.none"));
 
 /**
  * border-break
  * Emmet abbreviation: bdbk
  */
+
 @include create-css-rule("border-break", "bdbk", ("c.close"));
 
 /**
  * border-collapse
  * Emmet abbreviation: bdcl
  */
+
 @include create-css-rule("border-collapse", "bdcl", ("c.collapse", "s.separate"));
 
 /**
  * border-color
  * Emmet abbreviation: bdc
  */
+
 @include create-css-rule("border-color", "bdc", $color-codes-list);
 @include create-css-rule("border-color", "bdc", $color-names-list);
-
 
 /**
  * border-image
  * Emmet abbreviation: bdi
  */
+
 @include create-css-rule("border-image", "bdi", ("n.none"));
 
 /**
  * border-top-image
  * Emmet abbreviation: bdti
  */
+
 @include create-css-rule("border-top-image", "bdti", ("n.none"));
 
 /**
  * border-right-image
  * Emmet abbreviation: bdri
  */
+
 @include create-css-rule("border-right-image", "bdri", ("n.none"));
 
 /**
  * border-bottom-image
  * Emmet abbreviation: bdbi
  */
+
 @include create-css-rule("border-bottom-image", "bdbi", ("n.none"));
 
 /**
  * border-left-image
  * Emmet abbreviation: bdli
  */
+
 @include create-css-rule("border-left-image", "bdli", ("n.none"));
 
 /**
  * border-corner-image
  * Emmet abbreviation: bdci
  */
+
 @include create-css-rule("border-corner-image", "bdci", ("n.none", "c.continue"));
 
 /**
  * border-top-left-image
  * Emmet abbreviation: bdtli
  */
+
 @include create-css-rule("border-top-left-image", "bdtli", ("n.none", "c.continue"));
 
 /**
  * border-top-right-image
  * Emmet abbreviation: bdtri
  */
+
 @include create-css-rule("border-top-right-image", "bdtri", ("n.none", "c.continue"));
 
 /**
  * border-bottom-right-image
  * Emmet abbreviation: bdbri
  */
+
 @include create-css-rule("border-bottom-right-image", "bdbri", ("n.none", "c.continue"));
 
 /**
  * border-bottom-left-image
  * Emmet abbreviation: bdbli
  */
+
 @include create-css-rule("border-bottom-left-image", "bdbli", ("n.none", "c.continue"));
 
 /**
  * border-fit
  * Emmet abbreviation: bdf
  */
+
 @include create-css-rule("border-fit", "bdf", ("c.clip", "r.repeat", "sc.scale", "st.stretch", "ow.overwrite", "of.overflow", "sp.space"));
 
 /**
  * border-length
  * Emmet abbreviation: bdlen
  */
+
 @include create-css-rule("border-length", "bdlen", ("a.auto"));
 
 /**
  * border-spacing
  * Emmet abbreviation: bdsp
  */
+
 @include css-rule-with-integer-value("border-spacing", "bdsp", "px", $zero, $twenty-five, $one);
 
 /**
  * border-style
  * Emmet abbreviation: bds
  */
+
 @include create-css-rule("border-style", "bds", ("n.none", "h.hidden", "dt.dotted", "ds.dashed", "s.solid", "db.double", "dtds.dot-dash", "dtdtds.dot-dot-dash", "w.wave", "g.groove", "r.ridge", "i.inset", "o.outset"));
 
 /**
  * border-width
  * Emmet abbreviation: bdw
  */
+
 @include css-rule-with-integer-value("border-width", "bdw", "px", $zero, $ten, $one);
 
 /**
  * border-top
  * Emmet abbreviation: bdt
  */
+
 @include create-css-rule("border-top", "bdt", ("n.none"));
 
 /**
  * border-top-width
  * Emmet abbreviation: bdtw
  */
+
 @include css-rule-with-integer-value("border-top-width", "bdtw", "px", $zero, $ten, $one);
 
 /**
  * border-top-style
  * Emmet abbreviation: bdts
  */
+
 @include create-css-rule("border-top-style", "bdts", ("n.none", "h.hidden", "dt.dotted", "ds.dashed", "s.solid", "db.double", "dtds.dot-dash", "dtdtds.dot-dot-dash", "w.wave", "g.groove", "r.ridge", "i.inset", "o.outset"));
 
 /**
  * border-top-color
  * Emmet abbreviation: bdtc
  */
+
 @include create-css-rule("border-top-color", "bdtc", $color-codes-list);
 @include create-css-rule("border-top-color", "bdtc", $color-names-list);
-
 
 /**
  * border-right
  * Emmet abbreviation: bdr
  */
+
 @include create-css-rule("border-right", "bdr", ("n.none"));
 
 /**
  * border-right-width
  * Emmet abbreviation: bdrw
  */
+
 @include css-rule-with-integer-value("border-right-width", "bdrw", "px", $zero, $ten, $one);
 
 /**
  * border-right-style
  * Emmet abbreviation: bdrst
  */
+
 @include create-css-rule("border-right-style", "bdrst", ("n.none", "h.hidden", "dt.dotted", "ds.dashed", "s.solid", "db.double", "dtds.dot-dash", "dtdtds.dot-dot-dash", "w.wave", "g.groove", "r.ridge", "i.inset", "o.outset"));
 
 /**
  * border-right-color
  * Emmet abbreviation: bdrc
  */
+
 @include create-css-rule("border-right-color", "bdrc", $color-codes-list);
 @include create-css-rule("border-right-color", "bdrc", $color-names-list);
-
 
 /**
  * border-bottom
  * Emmet abbreviation: bdb
  */
+
 @include create-css-rule("border-bottom", "bdb", ("n.none"));
 
 /**
  * border-bottom-width
  * Emmet abbreviation: bdbw
  */
+
 @include css-rule-with-integer-value("border-bottom-width", "bdbw", "px", $zero, $ten, $one);
 
 /**
  * border-bottom-style
  * Emmet abbreviation: bdbs
  */
+
 @include create-css-rule("border-bottom-style", "bdbs", ("n.none", "h.hidden", "dt.dotted", "ds.dashed", "s.solid", "db.double", "dtds.dot-dash", "dtdtds.dot-dot-dash", "w.wave", "g.groove", "r.ridge", "i.inset", "o.outset"));
 
 /**
  * border-bottom-color
  * Emmet abbreviation: bdbc
  */
+
 @include create-css-rule("border-bottom-color", "bdbc", $color-codes-list);
 @include create-css-rule("border-bottom-color", "bdbc", $color-names-list);
-
 
 /**
  * border-left
  * Emmet abbreviation: bdl
  */
+
 @include create-css-rule("border-left", "bdl", ("n.none"));
 
 /**
  * border-left-width
  * Emmet abbreviation: bdlw
  */
+
 @include css-rule-with-integer-value("border-left-width", "bdlw", "px", $zero, $ten, $one);
 
 /**
  * border-left-style
  * Emmet abbreviation: bdls
  */
+
 @include create-css-rule("border-left-style", "bdls", ("n.none", "h.hidden", "dt.dotted", "ds.dashed", "s.solid", "db.double", "dtds.dot-dash", "dtdtds.dot-dot-dash", "w.wave", "g.groove", "r.ridge", "i.inset", "o.outset"));
 
 /**
  * border-left-color
  * Emmet abbreviation: bdlc
  */
+
 @include create-css-rule("border-left-color", "bdlc", $color-codes-list);
 @include create-css-rule("border-left-color", "bdlc", $color-names-list);
-
 
 /**
  * border-radius
  * Emmet abbreviation: bdrs
  */
-@include css-rule-with-integer-value("border-radius", "bdrs", "px", $zero, $fifty, $one);
+
+@include css-rule-with-integer-value("border-radius", "bdrs", "px", $zero, $ten, $one);
+@include css-rule-with-integer-value("border-radius", "bdrs", "px", $fifteen, $fifty, $five);
 
 /**
  * border-top-right-radius
  * Emmet abbreviation: bdtrrs
  */
-@include css-rule-with-integer-value("border-top-right-radius", "bdtrrs", "px", $zero, $fifty, $one);
+
+@include css-rule-with-integer-value("border-top-right-radius", "bdtrrs", "px", $zero, $ten, $one);
+@include css-rule-with-integer-value("border-top-right-radius", "bdtrrs", "px", $fifteen, $fifty, $five);
 
 /**
  * border-top-left-radius
  * Emmet abbreviation: bdtlrs
  */
-@include css-rule-with-integer-value("border-top-left-radius", "bdtlrs", "px", $zero, $fifty, $one);
+
+@include css-rule-with-integer-value("border-top-left-radius", "bdtlrs", "px", $zero, $ten, $one);
+@include css-rule-with-integer-value("border-top-left-radius", "bdtlrs", "px", $fifteen, $fifty, $five);
 
 /**
  * border-bottom-right-radius
  * Emmet abbreviation: bdbrrs
  */
-@include css-rule-with-integer-value("border-bottom-right-radius", "bdbrrs", "px", $zero, $fifty, $one);
+
+@include css-rule-with-integer-value("border-bottom-right-radius", "bdbrrs", "px", $zero, $ten, $one);
+@include css-rule-with-integer-value("border-bottom-right-radius", "bdbrrs", "px", $fifteen, $fifty, $five);
 
 /**
  * border-bottom-left-radius
  * Emmet abbreviation: bdblrs
  */
-@include css-rule-with-integer-value("border-bottom-left-radius", "bdblrs", "px", $zero, $fifty, $one);
+
+@include css-rule-with-integer-value("border-bottom-left-radius", "bdblrs", "px", $zero, $ten, $one);
+@include css-rule-with-integer-value("border-bottom-left-radius", "bdblrs", "px", $fifteen, $fifty, $five);

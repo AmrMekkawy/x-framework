@@ -6,10 +6,12 @@
  * min-width
  * Emmet abbreviation: miw
  */
-@include css-rule-with-integer-value("min-width", "miw", "px", $zero, $one-hundred, $one);
+
+@include css-rule-with-integer-value("min-width", "miw", "px", $zero, $five-hundred, $five);
 
 /**
  * min-height
  * Emmet abbreviation: mih
  */
-@include css-rule-with-integer-value("min-height", "mih", "px", $zero, $one-hundred, $one);
+
+@include css-rule-with-integer-value("min-height", "mih", "px", $zero, $five-hundred, $five);

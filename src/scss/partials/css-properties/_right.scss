@@ -6,5 +6,7 @@
  * CSS property: right
  * Emmet abbreviation: r
  */
+
 @include create-css-rule("right", "r", ("a.auto"));
-@include css-rule-with-integer-value("right", "r", "px", $zero, $one-hundred, $one);
+@include css-rule-with-integer-value("right", "r", "px", $zero, $twenty-five, $one);
+@include css-rule-with-integer-value("right", "r", "px", $thirty, $two-hundred-fifty, $five);

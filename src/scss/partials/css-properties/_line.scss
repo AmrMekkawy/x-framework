@@ -6,4 +6,5 @@
  * line-height
  * Emmet abbreviation: lh
  */
-@include css-rule-with-integer-value("line-height", "lh", "px", $zero, $one-hundred, $one);
+
+@include css-rule-with-integer-value("line-height", "lh", "px", $zero, $two-hundred-fifty, $five);

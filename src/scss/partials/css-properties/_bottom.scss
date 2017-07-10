@@ -6,5 +6,7 @@
  * CSS property: bottom
  * Emmet abbreviation: b
  */
+
 @include create-css-rule("bottom", "b", ("a.auto"));
-@include css-rule-with-integer-value("bottom", "b", "px", $zero, $one-hundred, $one);
+@include css-rule-with-integer-value("bottom", "b", "px", $zero, $twenty-five, $one);
+@include css-rule-with-integer-value("bottom", "b", "px", $thirty, $two-hundred-fifty, $five);
