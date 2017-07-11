@@ -29,6 +29,11 @@ var concat = require('gulp-concat');
 // more info: https://goo.gl/yhYoKc
 var cssnano = require('gulp-cssnano');
 
+// gulp-sourcemaps: a plugin that helps generating source map files
+// by default, gulp-sourcemaps writes the source maps inline in the 
+// compiled CSS file. more info: https://goo.gl/SkES99
+var sourcemaps = require('gulp-sourcemaps');
+
 // gulp-rename: a plugin that helps renaming files
 // more info: https://goo.gl/qWA4T6
 var rename = require('gulp-rename');
@@ -53,18 +58,21 @@ var imagemin = require('gulp-imagemin');
 // --------------------------------------------------------------------
 
 // converting sass to css 
+// gulp-sass plugin supports gulp-sourcemaps plugins. more: https://goo.gl/SkES99
 gulp.task('sass', function() {
     return gulp.src([
             // dirs.src.scss + '/test-1.scss',
             // dirs.src.scss + '/test-2.scss',
             dirs.src.scss + '/x-framework.scss'
         ])
+        .pipe(sourcemaps.init()) // to generate source map
         .pipe(sass({
                 // available values: nested, expanded, compact, compressed
                 outputStyle: 'compact'
             })
             .on('error', sass.logError)
         )
+        .pipe(sourcemaps.write("")) // generate source map in external file
         .pipe(gulp.dest(dirs.dist.css));
 });
 
@@ -100,12 +108,14 @@ gulp.task('concatCSS', function() {
 // minifying and renaming css
 gulp.task('minifyCSS', function() {
     return gulp.src([dirs.dist.css + '/**/*.css'])
+        .pipe(sourcemaps.init()) // to generate source map
         .pipe(cssnano())
         .pipe(rename(function(path) {
             path.dirname += '';
             path.basename += '.min';
             path.extname = '.css';
         }))
+        .pipe(sourcemaps.write("")) // generate source map in external file
         .pipe(gulp.dest(dirs.dist.css));
 });
 
