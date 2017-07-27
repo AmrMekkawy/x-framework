@@ -30,7 +30,7 @@ var concat = require('gulp-concat');
 var cssnano = require('gulp-cssnano');
 
 // gulp-sourcemaps: a plugin that helps generating source map files
-// by default, gulp-sourcemaps writes the source maps inline in the 
+// by default, gulp-sourcemaps writes the source maps inline in the
 // compiled CSS file. more info: https://goo.gl/SkES99
 var sourcemaps = require('gulp-sourcemaps');
 
@@ -38,9 +38,9 @@ var sourcemaps = require('gulp-sourcemaps');
 // more info: https://goo.gl/qWA4T6
 var rename = require('gulp-rename');
 
-// run-sequence: a plugin that helps run a series of dependent gulp 
+// run-sequence: a plugin that helps run a series of dependent gulp
 // tasks in order. more info: https://goo.gl/24fhj4
-var runSequence = require('run-sequence')
+var runSequence = require('run-sequence');
 
 // gulp-clean: a plugin that helps removing/deleting files and folders
 // more info: https://goo.gl/2eLLuk
@@ -57,7 +57,7 @@ var imagemin = require('gulp-imagemin');
 
 // --------------------------------------------------------------------
 
-// converting sass to css 
+// converting sass to css
 // gulp-sass plugin supports gulp-sourcemaps plugins. more: https://goo.gl/SkES99
 gulp.task('sass', function() {
     return gulp.src([
@@ -160,14 +160,14 @@ gulp.task('watch', ['buildCSS', 'minifyImages'], function() {
     // to dirs.src.img directory and sub directories
     gulp.watch(dirs.src.img + '/**/*', ['minifyImages']);
 
-    // apply buildJS task when any file ending with .js changes 
+    // apply buildJS task when any file ending with .js changes
     // in dirs.src.js directory and sub directories
     // gulp.watch(dirs.src.js + '/**/*.js', ['buildJS']);
 });
 
 // --------------------------------------------------------------------
 
-// the default task that should be executed if we type the command 
+// the default task that should be executed if we type the command
 // "gulp" in the terminal
 gulp.task('default', function(callback) {
     // running tasks in sequance

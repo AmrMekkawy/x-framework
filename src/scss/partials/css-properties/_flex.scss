@@ -1,12 +1,11 @@
-//***********************************************/
-//* flex                                        */
-//***********************************************/
+//***********************************************
+//* flex                                        *
+//***********************************************
 
 /**
  * flex
  * Emmet abbreviation: fx
  */
-
 @include create-css-rule("flex", "fx", ("a.auto"));
 @include css-rule-with-integer-value("flex", "fx", "", $zero, $one, $one);
 
@@ -14,7 +13,6 @@
  * flex-basis
  * Emmet abbreviation: fxb
  */
-
 @include create-css-rule("flex-basis", "fxb", ("a.auto"));
 @include css-rule-with-integer-value("flex-basis", "fxb", "px", $zero, $two-hundred-fifty, $ten);
 
@@ -22,26 +20,22 @@
  * flex-direction
  * Emmet abbreviation: fxd
  */
-
 @include create-css-rule("flex-direction", "fxd", ("r.row", "rr.row-reverse", "c.column", "cr.column-reverse"));
 
 /**
  * flex-grow
  * Emmet abbreviation: fxg
  */
-
 @include css-rule-with-integer-value("flex-grow", "fxg", "", $zero, $ten, $one);
 
 /**
  * flex-shrink
  * Emmet abbreviation: fxsh
  */
-
 @include css-rule-with-integer-value("flex-shrink", "fxsh", "", $zero, $ten, $one);
 
 /**
  * flex-wrap
  * Emmet abbreviation: fxw
  */
-
 @include create-css-rule("flex-wrap", "fxw", ("n.nowrap", "w.wrap", "wr.wrap-reverse"));

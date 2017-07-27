@@ -1,27 +1,27 @@
-//***********************************************/
-//* overflow                                    */
-//***********************************************/
+//***********************************************
+//* overflow                                    *
+//***********************************************
 
 /**
- * CSS property: overflow
+ * overflow
  * Emmet abbreviation: ov
  */
 @include create-css-rule("overflow", "ov", ("v.visible", "h.hidden", "s.scroll", "a.auto"));
 
 /**
- * CSS property: overflow-x
+ * overflow-x
  * Emmet abbreviation: ovx
  */
 @include create-css-rule("overflow-x", "ovx", ("v.visible", "h.hidden", "s.scroll", "a.auto"));
 
 /**
- * CSS property: overflow-y
+ * overflow-y
  * Emmet abbreviation: ovy
  */
 @include create-css-rule("overflow-y", "ovy", ("v.visible", "h.hidden", "s.scroll", "a.auto"));
 
 /**
- * CSS property: overflow-style
+ * overflow-style
  * Emmet abbreviation: ovs
  */
 @include create-css-rule("overflow-style", "ovs", ("a.auto", "s.scrollbar", "p.panner", "m.move", "mq.marquee"));

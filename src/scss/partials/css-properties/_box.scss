@@ -1,17 +1,15 @@
-//***********************************************/
-//* align                                       */
-//***********************************************/
+//***********************************************
+//* box                                         *
+//***********************************************
 
 /**
  * box-sizing
  * Emmet abbreviation: bxz
- *
  */
 @include create-css-rule("box-sizing", "bxz", ("cb.content-box", "bb.border-box"));
 
 /**
  * box-shadow
  * Emmet abbreviation: bxsh
- *
  */
 @include create-css-rule("box-shadow", "bxsh", ("n.none"));

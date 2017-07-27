@@ -1,11 +1,11 @@
-//***********************************************/
-//* height                                      */
-//***********************************************/
+//***********************************************
+//* height                                      *
+//***********************************************
 
 /**
  * height
  * Emmet abbreviation: h
  */
-
 @include create-css-rule("height", "h", ("a.auto"));
-@include css-rule-with-integer-value("height", "h", "px", $zero, $five-hundred, $five);
+@include css-rule-with-integer-value("height", "h", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("height", "h", "px", $fifty-five, $two-hundred-fifty, $five);

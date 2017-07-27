@@ -1,17 +1,17 @@
-//***********************************************/
-//* min                                         */
-//***********************************************/
+//***********************************************
+//* min                                         *
+//***********************************************
 
 /**
  * min-width
  * Emmet abbreviation: miw
  */
-
-@include css-rule-with-integer-value("min-width", "miw", "px", $zero, $five-hundred, $five);
+@include css-rule-with-integer-value("min-width", "miw", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("min-width", "miw", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * min-height
  * Emmet abbreviation: mih
  */
-
-@include css-rule-with-integer-value("min-height", "mih", "px", $zero, $five-hundred, $five);
+@include css-rule-with-integer-value("min-height", "mih", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("min-height", "mih", "px", $fifty-five, $two-hundred-fifty, $five);

@@ -1,48 +1,43 @@
-//***********************************************/
-//* margin                                      */
-//***********************************************/
+//***********************************************
+//* margin                                      *
+//***********************************************
 
 /**
  * margin
  * Emmet abbreviation: m
- *
  */
-
 @include create-css-rule("margin", "m", ("a.auto"));
-@include css-rule-with-integer-value("margin", "m", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("margin", "m", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("margin", "m", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * margin-top
  * Emmet abbreviation: mt
- *
  */
-
 @include create-css-rule("margin-top", "mt", ("a.auto"));
-@include css-rule-with-integer-value("margin-top", "mt", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("margin-top", "mt", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("margin-top", "mt", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * margin-right
  * Emmet abbreviation: mr
- *
  */
-
 @include create-css-rule("margin-right", "mr", ("a.auto"));
-@include css-rule-with-integer-value("margin-right", "mr", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("margin-right", "mr", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("margin-right", "mr", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * margin-bottom
  * Emmet abbreviation: mb
- *
  */
-
 @include create-css-rule("margin-bottom", "mb", ("a.auto"));
-@include css-rule-with-integer-value("margin-bottom", "mb", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("margin-bottom", "mb", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("margin-bottom", "mb", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * margin-left
  * Emmet abbreviation: ml
- *
  */
-
 @include create-css-rule("margin-left", "ml", ("a.auto"));
-@include css-rule-with-integer-value("margin-left", "ml", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("margin-left", "ml", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("margin-left", "ml", "px", $fifty-five, $two-hundred-fifty, $five);

@@ -1,10 +1,10 @@
-//***********************************************/
-//* line                                        */
-//***********************************************/
+//***********************************************
+//* line                                        *
+//***********************************************
 
 /**
  * line-height
  * Emmet abbreviation: lh
  */
-
-@include css-rule-with-integer-value("line-height", "lh", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("line-height", "lh", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("line-height", "lh", "px", $fifty-five, $two-hundred-fifty, $five);

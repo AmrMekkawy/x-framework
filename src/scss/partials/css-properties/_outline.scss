@@ -1,6 +1,6 @@
-//***********************************************/
-//* outline                                     */
-//***********************************************/
+//***********************************************
+//* outline                                     *
+//***********************************************
 
 /**
  * outline
@@ -19,7 +19,7 @@
  * Emmet abbreviation: olw
  */
 @include create-css-rule("outline-width", "olw", ("tn.thin", "m.medium", "tc.thick"));
-@include css-rule-with-integer-value("outline-width", "olw", "px", $zero, $ten, $one);
+@include css-rule-with-integer-value("outline-width", "olw", "px", $zero, $twenty-five, $one);
 
 /**
  * outline-style

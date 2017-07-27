@@ -1,10 +1,10 @@
-//***********************************************/
-//* z                                           */
-//***********************************************/
+//***********************************************
+//* z                                           *
+//***********************************************
 
 /**
- * CSS property: z-index
+ * z-index
  * Emmet abbreviation: z
  */
 @include create-css-rule("z-index", "z", ("a.auto"));
-@include css-rule-with-integer-value("z-index", "z", "", $zero, $one-thousand, $ten);
+@include css-rule-with-integer-value("z-index", "z", "", $zero, $five-hundred, $ten);

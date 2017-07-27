@@ -1,9 +1,9 @@
-//***********************************************/
-//* position                                    */
-//***********************************************/
+//***********************************************
+//* position                                    *
+//***********************************************
 
 /**
- * CSS property: position
+ * position
  * Emmet abbreviation: pos
  */
 @include create-css-rule("position", "pos", ("a.absolute", "f.fixed", "r.relative", "s.static"));

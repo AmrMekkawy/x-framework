@@ -1,12 +1,12 @@
-//***********************************************/
-//* column                                      */
-//***********************************************/
+//***********************************************
+//* column                                      *
+//***********************************************
 
 /**
  * column-count
  * Emmet abbreviation: colmc
  */
-@include css-rule-with-integer-value("column-count", "colmc", "", $zero, $ten, $one);
+@include css-rule-with-integer-value("column-count", "colmc", "", $zero, $twenty-five, $one);
 
 /**
  * column-fill
@@ -43,11 +43,11 @@
  * column-span
  * Emmet abbreviation: colms
  */
- // Takes value "1" or "all"
+// Takes value "1" or "all"
 @include create-css-rule("column-span", "colms", ("1.1", "a.all"));
 
 /**
  * column-width
  * Emmet abbreviation: colmw
  */
-@include css-rule-with-integer-value("column-width", "colmw", "px", $zero, $five-hundred, $ten);
+@include css-rule-with-integer-value("column-width", "colmw", "px", $zero, $two-hundred-fifty, $ten);

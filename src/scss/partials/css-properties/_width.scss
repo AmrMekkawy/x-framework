@@ -1,11 +1,11 @@
-//***********************************************/
-//* width                                       */
-//***********************************************/
+//***********************************************
+//* width                                       *
+//***********************************************
 
 /**
  * width
  * Emmet abbreviation: w
  */
-
 @include create-css-rule("width", "w", ("a.auto"));
-@include css-rule-with-integer-value("width", "w", "px", $zero, $five-hundred, $five);
+@include css-rule-with-integer-value("width", "w", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("width", "w", "px", $fifty-five, $two-hundred-fifty, $five);

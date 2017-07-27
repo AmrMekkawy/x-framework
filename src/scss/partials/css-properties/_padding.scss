@@ -1,43 +1,38 @@
-//***********************************************/
-//* padding                                     */
-//***********************************************/
+//***********************************************
+//* padding                                     *
+//***********************************************
 
 /**
  * padding
  * Emmet abbreviation: p
- *
  */
-
-@include css-rule-with-integer-value("padding", "p", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("padding", "p", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("padding", "p", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * padding-top
  * Emmet abbreviation: pt
- *
  */
-
-@include css-rule-with-integer-value("padding-top", "pt", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("padding-top", "pt", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("padding-top", "pt", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * padding-right
  * Emmet abbreviation: pr
- *
  */
-
-@include css-rule-with-integer-value("padding-right", "pr", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("padding-right", "pr", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("padding-right", "pr", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * padding-bottom
  * Emmet abbreviation: pb
- *
  */
-
-@include css-rule-with-integer-value("padding-bottom", "pb", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("padding-bottom", "pb", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("padding-bottom", "pb", "px", $fifty-five, $two-hundred-fifty, $five);
 
 /**
  * padding-left
  * Emmet abbreviation: pl
- *
  */
-
-@include css-rule-with-integer-value("padding-left", "pl", "px", $zero, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("padding-left", "pl", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("padding-left", "pl", "px", $fifty-five, $two-hundred-fifty, $five);

@@ -1,12 +1,11 @@
-//***********************************************/
-//* bottom                                      */
-//***********************************************/
+//***********************************************
+//* bottom                                      *
+//***********************************************
 
 /**
- * CSS property: bottom
+ * bottom
  * Emmet abbreviation: b
  */
-
 @include create-css-rule("bottom", "b", ("a.auto"));
-@include css-rule-with-integer-value("bottom", "b", "px", $zero, $twenty-five, $one);
-@include css-rule-with-integer-value("bottom", "b", "px", $thirty, $two-hundred-fifty, $five);
+@include css-rule-with-integer-value("bottom", "b", "px", $zero, $fifty, $one);
+@include css-rule-with-integer-value("bottom", "b", "px", $fifty-five, $two-hundred-fifty, $five);
