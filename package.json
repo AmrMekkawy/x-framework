@@ -1,6 +1,6 @@
 {
     "name": "x-framework",
-    "version": "0.6.0",
+    "version": "0.6.1",
     "description": "A simple CSS framework that makes use of Emmet CSS abbreviations",
     "main": "dist/css/x-framework.min.css",
     "keywords": [
