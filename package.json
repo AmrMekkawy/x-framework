@@ -1,6 +1,6 @@
 {
     "name": "x-framework",
-    "version": "0.6.1",
+    "version": "0.6.2",
     "description": "A simple CSS framework that makes use of Emmet CSS abbreviations",
     "main": "dist/css/x-framework.min.css",
     "keywords": [
@@ -11,7 +11,14 @@
         "framework",
         "web"
     ],
-    "repository": "https://github.com/AmrMekkawy/x-framework.git",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AmrMekkawy/x-framework.git"
+    },
+    "homepage": "https://github.com/AmrMekkawy/x-framework",
     "author": "Amr Mekkawy <amr.mekkawy@gmail.com>",
     "license": "MIT",
     "dependencies": {},
@@ -26,5 +33,8 @@
         "gulp-sass": "^3.1.0",
         "gulp-sourcemaps": "^2.6.0",
         "run-sequence": "^2.0.0"
+    },
+    "bugs": {
+        "url": "https://github.com/AmrMekkawy/x-framework/issues"
     }
 }
