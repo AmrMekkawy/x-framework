@@ -1,5 +1,5 @@
 # more about ignoring node_modules folder everywhere see: https://goo.gl/9GYxR8 or https://goo.gl/Jo1Y7k
 node_modules/
 
-# ignore the folder where you store temp files
-__temp_files/
+# ignore any file or folder begins with 3 underscores `___`
+___*
